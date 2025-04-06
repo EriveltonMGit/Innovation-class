@@ -185,6 +185,7 @@
     letter-spacing: 0px;
     color: var(--color-text-sub-menu);
     transition: 0.3s all;
+
   }
   
   .categoria-link:nth-child(1) {
