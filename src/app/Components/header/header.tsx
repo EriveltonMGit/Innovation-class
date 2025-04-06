@@ -4,7 +4,10 @@ import "./header.css";
 import Image from "next/image";
 // IMPORTAÇÃO DOS COMPOENTES DO ANTDESING
 import { Input } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { SearchOutlined,ShoppingCartOutlined} from '@ant-design/icons';
+// IMPORTAÇÃO COMPONETES 
+
+import Categories from "../category/categories";
 function Header() {
   return (
     <>
@@ -26,16 +29,24 @@ function Header() {
           </div>
           {/* input de pesquisa */}
           <div className="area_input">
-          <Input
-        placeholder="Digite aqui o que você procura..."
-        suffix={<SearchOutlined />}
-        style={{ width: 300 }}
-        allowClear
-      />
+          <Input placeholder="Digite aqui o que você procura..." suffix={<SearchOutlined />}  allowClear />
+          </div>
+          {/* Área registro + carrinho */}
+          <div className="area_register">
+             <div className="primery-group">
+             <Image src="/img/icons/Grupo-19210.webp" alt="Logo do site" width={200} height={100} priority /> 
+             <p>Olá, Nome cliente!</p>
+              
+             </div>
+             <div className="two-group">
+             <ShoppingCartOutlined />
+             </div>
           </div>
         </main>
         {/* Área menu de Categorias */}
-        <main className="container_area_category"></main>
+        <main className="container_area_category">
+             <Categories></Categories>
+        </main>
       </section>
     </>
   );
