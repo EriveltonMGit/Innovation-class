@@ -4,17 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import "./categories.css";
 import One from "./drop-one/drop.one";
-import { MenuOutlined } from "@ant-design/icons"; // ÍCONE DE MENU
+import Two from "./drop-two/drop.two";
+import { MenuOutlined } from "@ant-design/icons";
 
 function Categories() {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdownIndex, setShowDropdownIndex] = useState<number | null>(null);
 
   const handleMouseEnter = (index: number) => {
-    if (index === 0) setShowDropdown(true);
+    setShowDropdownIndex(index);
   };
 
-  const handleMouseLeave = (index: number) => {
-    if (index === 0) setShowDropdown(false);
+  const handleMouseLeave = () => {
+    setShowDropdownIndex(null);
   };
 
   const categorias = [
@@ -29,6 +30,21 @@ function Categories() {
     "Departamento",
   ];
 
+  // Array de componentes de dropdown correspondentes
+  const dropdownComponents = [
+    <One key="one" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+    <Two key="two" />,
+   
+    
+  ];
+
   return (
     <>
       <section className="container_categories_">
@@ -37,17 +53,15 @@ function Categories() {
             <li
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
+              onMouseLeave={handleMouseLeave}
             >
               <Link href="">
-                {index === 0 && (
-                  <MenuOutlined />
-                )}
+                {index === 0 && <MenuOutlined />}
                 {categoria}
               </Link>
 
-              {/* Exibe apenas se for o primeiro e o mouse estiver sobre ele */}
-              {index === 0 && showDropdown && <One />}
+              {/* Exibe o dropdown correspondente ao índice */}
+              {showDropdownIndex === index && dropdownComponents[index]}
             </li>
           ))}
         </ul>
