@@ -1,9 +1,9 @@
 /* container_cards */
-.container_cards {
+.container_cards_two {
   width: 1259px;
   height: 478px;
   position: absolute;
-  top: 754px;
+  top: 3806px;
   left: 316px;
   margin: 0 auto;
   display: flex;
@@ -240,9 +240,9 @@
   cursor: pointer;
   font-family: var(--font-nunito-sans), sans-serif;
   transition: all 0.5s;
-  left: 8;
-  right: 8;
-  bottom: 8;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
 }
 
 .btn_add_carrinho:hover {

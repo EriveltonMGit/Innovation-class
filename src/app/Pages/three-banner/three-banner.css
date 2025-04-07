@@ -1,5 +1,5 @@
 /* container_banner_one */
-.container_banner_one {
+.container_banner_three {
   margin: 0 auto;
   width: 1177px;
   height: 747px;
@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 1328px;
+  top: 2995px;
   left: 371.5px;
 
-  .are_img_banner_one {
+  .are_img_banner_three {
     width: 652px;
     height: 747px;
     display: flex;
@@ -26,7 +26,7 @@
   }
 }
 
-.area_content_banner_one {
+.area_content_banner_three {
   width: 652px;
   height: 747px;
   display: flex;

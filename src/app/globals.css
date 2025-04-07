@@ -38,4 +38,16 @@ body {
   --color-text: #303030;
   --color-text-white: #ffffff;
   --bk-color-carousel:#E7E7EA;
+  --bg-color-banner:#C2C2C2;
+  --bg-color-register:#DEDEDE;
+  --bg-color-footer:#F5F5F5;
+}
+
+
+/* container_page */
+.container_page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -1,0 +1,102 @@
+/* container_areaa_register */
+.container_areaa_register {
+  background-color: var(--colorbg-white);
+  position: absolute;
+  top: 5069px;
+  left: 371.5px;
+  width: 1260px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    width: 1260px;
+    h1 {
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+
+      height: 27px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      margin-bottom: 0;
+    }
+    span {
+      color: var(--bg-sale);
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+
+      height: 27px;
+      line-height: 100%;
+      letter-spacing: 0px;
+    }
+  }
+  main {
+    width: 1260px;
+    height: 176px;
+    border-radius: 8px;
+    background-color: var(--bg-color-register);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+
+      width: 1031px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    input {
+      width: 280px;
+      height: 48px;
+      border-radius: 8px;
+    }
+    .checkbox_area {
+      width: 278px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      #check {
+        width: 16px;
+      }
+      p {
+        width: 264px;
+        height: 16px;
+        font-weight: 700;
+        font-size: 11px;
+        text-decoration: underline;
+        font-family: var(--font-nunito-sans), sans-serif;
+        margin-bottom: 0;
+      }
+    }
+    button {
+      background-color: var(--bg-sale);
+      color: var(--colorbg-white);
+      width: 121px;
+      height:48px ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 8px;
+      padding: 14px 24px;
+      cursor: pointer;
+      transition: 0.5s all;
+
+    }
+    button:hover{
+        background-color: var(  --color-text-sub-menu);
+        color: var(  --color-text-white);
+
+    }
+  }
+}
