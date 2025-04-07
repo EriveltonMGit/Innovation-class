@@ -1,0 +1,14 @@
+
+
+
+/* container_banner_one */
+.container_banner_one{
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 1177px;
+    height: 747px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

@@ -21,7 +21,7 @@
 
 body {
   font-family: var(--font-nunito-sans), sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Definindo variáveis globais no arquivo CSS (geralmente em styles/globals.css ou styles/variables.css) */
@@ -30,9 +30,11 @@ body {
   --bg-sale: #005cff;
   --colorbg-white: #ffffff;
   --bg-sale-desc: #6220c1;
+  --bg-preco:#00264E;
   --color-text-sub-menu: #303030;
   --bg-color-sub-menu: #f5f5f5;
   --color-text-bolder: #000000;
+  --colorr-bg-desconto:#5EC0BE;
   --color-text: #303030;
   --color-text-white: #ffffff;
   --bk-color-carousel:#E7E7EA;
