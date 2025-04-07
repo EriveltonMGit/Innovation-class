@@ -1,0 +1,199 @@
+.drop_one_container_ {
+    position: absolute;
+    top: 48px;
+    left: -1px;
+    width: 1261px;
+    height: 329px;
+    background-color: var(--colorbg-white);
+    color: white;
+    z-index: 1000;
+    border-radius: 5px;
+    animation: fadeIn 0.3s ease;
+    box-shadow: 0px 0px 8px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* sub_menu_drop_one */
+  .sub_menu_drop_one {
+    width: 234px;
+    height: 329px;
+    top: 38px;
+    left: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: -1px;
+    /* opacity: 57%; */
+    background-color: var(--bg-color-sub-menu);
+  
+    a {
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: var(--color-text);
+    }
+  }
+  
+  .dep-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    transition: 0.3s all;
+    width: 190.68px;
+    height: 19px;
+    opacity: 1;
+  }
+  
+  .dep-item:hover {
+    color: var(--bg-sale);
+  }
+  
+  /* sub_categories_wrapper" */
+  .sub_categories_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 534px;
+    position: absolute;
+    left: 0;
+    margin-left: 234px;
+  }
+  
+  /* sub_categories */
+  .sub_categories {
+    width: 63px;
+    height: 236px;
+    top: 56px;
+    left: 267px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    transition: opacity 0.4s ease-in-out;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  /* animaão dos li */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* container_img_categories_ */
+  .container_img_categories_ {
+    width: 236px;
+    height: 298px;
+    margin-right: 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  
+    /* linear-gradient */
+    .linear-gradient {
+      position: absolute;
+      width: 236px;
+      height: 298px;
+      right: 0;
+      z-index: 200;
+      background-image: linear-gradient(90deg, #00000000 0%, #000000bf 74.9%);
+    }
+    img {
+      width: 236px;
+      height: 298px;
+      object-fit: cover;
+      background-position: center;
+      background-size: cover;
+      transition: opacity 0.4s ease-in-out;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    /* content_img_drop */
+    .content_img_drop {
+      position: absolute;
+      width: 127.43px;
+      height: 207.11px;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 43.89px;
+      margin-left: -27px;
+      margin-bottom: 47px;
+      transition: opacity 0.4s ease-in-out;
+      animation: fadeIn 0.4s ease-in-out;
+      h3 {
+        width: 126.71px;
+        height: 155.93px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        color: var(--color-text-white);
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0%;
+        font-size: 24px;
+        transition: opacity 0.4s ease-in-out;
+        animation: fadeIn 0.8s ease-in-out;
+      }
+    }
+  
+    button {
+      width: 116px;
+      height: 38px;
+      border: 1px solid var(--color-text-white);
+      font-weight: 700;
+      letter-spacing: 0%;
+      line-height: 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      font-family: var(--font-heebo), sans-serif;
+    }
+  }
+  /* categoria-link */
+  .categoria-link {
+    font-family: var(--font-nunito-sans), sans-serif;
+    width: 61px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--color-text-sub-menu);
+    transition: 0.3s all;
+
+  }
+  
+  .categoria-link:nth-child(1) {
+    color: var(--bg-sale);
+    font-weight: 700;
+  }
+  .categoria-link:hover {
+    color: var(--bg-sale);
+    font-weight: 700;
+  }
+  

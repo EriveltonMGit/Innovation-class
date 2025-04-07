@@ -1,0 +1,95 @@
+/* two_banner_container_' */
+.two_banner_container_ {
+
+  width: 100%;
+  height: 819px;
+  background-color: var(--bg-color-banner);
+  position: absolute;
+  top: 2130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1177px;
+    height: 728.14px;
+
+    .content_banner_two {
+      width: 652px;
+      height: 728.14px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      main {
+
+        width: 476px;
+        height: 567px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h1 {
+
+          width: 481px;
+          height: 42px;
+          font-family: var(--font-nunito-sans), sans-serif;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: 4%;
+          text-transform: uppercase;
+          color: var(--color-text-bolder);
+          font-size: 30px;
+          text-align: center;
+        }
+
+        div {
+
+          width: 470px;
+          height: 125px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          img {
+            height: 90px;
+            width: 90px;
+          }
+
+          p {
+            font-family: var(--font-nunito-sans), sans-serif;
+            width: 360px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 5%;
+            font-size: 16px;
+            margin-bottom: 0;
+
+          }
+        }
+      }
+    }
+    div:nth-child(2) {
+  
+      width: 652px;
+      height: 728.14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 652px;
+        height: 728.14px;
+        object-fit: cover;
+      }
+    }
+  }
+}

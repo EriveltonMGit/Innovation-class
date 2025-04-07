@@ -1,6 +1,5 @@
 /* HEADER CONTAINER */
 .container_header {
-  border: 1px solid red;
   width: 100%;
   height: 148px;
   background-color: var(--colorbg-white);
@@ -8,6 +7,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-shadow:0px 0px 16% #00000029;
+  z-index: 1000;
 }
 /* sale_ */
 .sale_ {
@@ -49,50 +50,92 @@
 
 /* container_area_register_ */
 .container_area_register_ {
-  border: 1px solid red;
   width: 1261px;
   height: 74px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-between;
 
   /* logo_ */
-  .logo_{
-    border: 1px solid red;
+  .logo_ {
+
     width: 152.58px;
     height: 27.08px;
     top: 52px;
     left: 330px;
   }
   /* area_input */
-  .area_input{
-    border: 1px solid red;
-    
+  .area_input {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 579px;
+    height: 38px;
+    top: 47px;
+    left: 949px;
+    input {
+      width: 579px;
+    }
+  }
+  /* area_register */
+  .area_register {
+
+    width: 164.31px;
+    height: 28px;
+    top: 52px;
+    left: 1417px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* primery-group */
+    .primery-group {
+      width: 115.57px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      img {
+        width: 20.57px;
+        height: 24px;
+      }
+      p {
+
+        width: 87px;
+        height: 28px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        left: 28.57px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0%;
+        margin-bottom: 0;
+      }
+    }
+    /* two-group */
+    .two-group {
+      width: 24.74px;
+      height: 24px;
+      .anticon{
+       font-size: 24.74px;
+       cursor: pointer; 
+      }
+     
+    }
   }
 }
 
 /* container_area_category */
 .container_area_category {
-  border: 1px solid red;
   width: 1261px;
   height: 74px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-between;
+  position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
 .custom-hover {

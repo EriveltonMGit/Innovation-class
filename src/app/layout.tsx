@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Nunito_Sans, Heebo } from "next/font/google";
 import "./globals.css";
 import "antd/dist/reset.css";
 
@@ -8,6 +8,13 @@ const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
   subsets: ["latin"],
   weight: ["400", "600", "700"], 
+});
+
+// Fonte secundária: Heebo
+const heebo = Heebo({
+  variable: "--font-heebo",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable} antialiased`}>
+      <body className={`${nunitoSans.variable} ${heebo.variable} antialiased`}>
         {children}
       </body>
     </html>
