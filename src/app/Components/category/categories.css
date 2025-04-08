@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   ul {
     width: 1259px;
     height: 22px;
@@ -18,37 +18,41 @@
     justify-content: space-between;
     margin-bottom: 0;
 
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
+    li {
+      width: 91px;
+      height: 22px;
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400px;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+    }
+    /* Aplica cor ao passar o mouse nos li, exceto o primeiro */
+    li:not(:first-child):hover {
+      color: var( --bg-sale ); 
+      font-weight: 700;
+      cursor: pointer;
+    }
+    li:nth-child(1) {
+      font-family: var(--font-nunito-sans), sans-serif;
       width: 152px;
       height: 22px;
       line-height: 22px;
       letter-spacing: 0%;
-      color: var(  --color-text-bolder);
+      color: var(--color-text-bolder);
       font-weight: 700;
       font-size: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      a{
+      a {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
       }
     }
-    
   }
 }
 /* ==============  MEDIA SCREEN ============== */
@@ -57,59 +61,57 @@
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_categories_ */
-.container_categories_ {
-  width: 390px;
-  height: 22px;
-  top: 108px;
-  left: 331px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  ul {
-    width: 1259px;
+  .container_categories_ {
+    width: 390px;
     height: 22px;
-    top: 22px;
-    left: 142px;
+    top: 108px;
+    left: 331px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: center;
 
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-    
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
-      width: 152px;
+    ul {
+      width: 1259px;
       height: 22px;
-      line-height: 22px;
-      letter-spacing: 0%;
-      color: var(  --color-text-bolder);
-      font-weight: 700;
-      font-size: 14px;
+      top: 22px;
+      left: 142px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      a{
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      li {
+        width: 91px;
+        height: 22px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+      }
+
+      li:nth-child(1) {
+        font-family: var(--font-nunito-sans), sans-serif;
+        width: 152px;
+        height: 22px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+        font-weight: 700;
+        font-size: 14px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+        }
       }
     }
-    
   }
-}
 }
 
 /* 📱 Celulares médios/grandes (modo retrato) */
@@ -133,58 +135,57 @@
 }
 
 /* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
   /* container_categories_ */
-.container_categories_ {
-  width: 1259px;
-  height: 22px;
-  top: 108px;
-  left: 331px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  ul {
+  .container_categories_ {
     width: 1259px;
     height: 22px;
-    top: 22px;
-    left: 142px;
+    top: 108px;
+    left: 331px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: center;
 
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
-      width: 152px;
+    ul {
+      width: 1259px;
       height: 22px;
-      line-height: 22px;
-      letter-spacing: 0%;
-      color: var(  --color-text-bolder);
-      font-weight: 700;
-      font-size: 14px;
+      top: 22px;
+      left: 142px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      a{
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      li {
+        width: 91px;
+        height: 22px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+      }
+
+      li:nth-child(1) {
+        font-family: var(--font-nunito-sans), sans-serif;
+        width: 152px;
+        height: 22px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+        font-weight: 700;
+        font-size: 14px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+        }
       }
     }
-    
   }
-}
 }

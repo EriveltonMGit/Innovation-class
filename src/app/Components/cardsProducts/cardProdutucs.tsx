@@ -4,10 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import "./cardProdutucs.css";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useMemo } from "react";
+import { message } from "antd";
+// importação zustand
+import { useCartStore } from "../../zustand/cartStore";
+
 function CardProducts() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
+  const addToCart = useCartStore((state) => state.addItem);
 
   const CARD_WIDTH = 438;
   const GAP = 17;
@@ -184,7 +189,7 @@ function CardProducts() {
       });
       setCurrentSlide(newSlide);
     }
-  }
+  };
   const scrollRight = () => {
     if (currentSlide < totalSlides - 1) {
       const newSlide = currentSlide + 1;
@@ -196,12 +201,12 @@ function CardProducts() {
     }
   };
 
-const handleScroll = () => {
-  if (!containerRef.current) return;
-  const scrollLeft = containerRef.current.scrollLeft;
-  const index = Math.round(scrollLeft / SCROLL_AMOUNT);
-  setCurrentSlide(index);
-};
+  const handleScroll = () => {
+    if (!containerRef.current) return;
+    const scrollLeft = containerRef.current.scrollLeft;
+    const index = Math.round(scrollLeft / SCROLL_AMOUNT);
+    setCurrentSlide(index);
+  };
 
   return (
     <section className="container_cards">
@@ -243,7 +248,20 @@ const handleScroll = () => {
 
             <button
               className="btn_add_carrinho"
-              onClick={() => console.log("Adicionado:", produto)}
+              onClick={() => {
+                addToCart({
+                  id: produto.id,
+                  nome: produto.descricao,
+                  preco: produto.precoAtual,
+                });
+                message.success({
+                  content: "Produto adicionado ao carrinho!",
+                  style: {
+                    marginTop: '20vh', 
+                  },
+                  duration: 2,
+                });
+              }}
             >
               Comprar
             </button>

@@ -9,7 +9,29 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_carousel */
+.container_carousel {
+  width: 390px;
+    height: 306px;
+  display: flex;
+  align-items: center;
+
+}
+}
 @media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_carousel */
+.container_carousel {
+  width: 390px;
+    height: 306px;
+  display: flex;
+  align-items: center;
+
+}
+}
+@media (max-width: 480px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_carousel */
 .container_carousel {

@@ -2,12 +2,11 @@
 import "./header.css";
 import Image from "next/image";
 import { Input } from "antd";
-import {
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { useEffect, useRef, useState } from "react";
 import Categories from "../category/categories";
+// topo do Header.tsx
+import { useCartStore } from "../../zustand/cartStore";
 
 function Header() {
   const [searchValue, setSearchValue] = useState("");
@@ -50,7 +49,7 @@ function Header() {
           </p>
         </div>
       </main>
-    
+
       <section className="container_header">
         {/* Área logo + input pesquisa + cadastro + carrinho */}
         <main className="container_area_register_">
@@ -96,7 +95,30 @@ function Header() {
               <p>Olá, Nome cliente!</p>
             </div>
             <div className="two-group">
-              <ShoppingCartOutlined />
+              <div style={{ position: "relative" }}>
+                <ShoppingCartOutlined style={{ fontSize: "24px" }} />
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "-8px",
+                    right: "-10px",
+                    background: "var(--bg-sale)",
+                    color: "white",
+                    borderRadius: "50%",
+                    width: "18px",
+                    height: "18px",
+                    fontSize: "12px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {useCartStore((state) => state.getItemCount())}
+                </span>
+                <span className="cart-count">
+                  {useCartStore((state) => state.getItemCount())}
+                </span>
+              </div>
             </div>
           </div>
         </main>
