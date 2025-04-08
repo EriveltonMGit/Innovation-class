@@ -31,23 +31,53 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  div:nth-child(1) {
-    height: 510px;
-    width: 685px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    mix-blend-mode: darken;
-  }
-  div:nth-child(2) {
-    height: 510px;
-    width: 685px;
+}
+/* container_text_sale_carousel */
+.container_text_sale_carousel {
+  height: 510px;
+  width: 685px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  div {
+    width: 576px;
+    height: 244.98px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+  h1 {
+    font-weight: 700;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-text-bolder);
+  }
+  h3 {
+    font-weight: 700;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 30%;
+    color: var(--bg-sale);
+    word-spacing: 10px;
+  }
+  h2 {
+    width: 580px;
+    height: 34px;
+    font-weight: 700;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 30%;
+    color: var(--bg-sale);
   }
 }
-
 .carousel-button {
   position: absolute;
   top: 50%;
@@ -71,7 +101,6 @@
   cursor: pointer;
 }
 
-
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
@@ -79,61 +108,124 @@
   /* Ex: iPhone SE, Galaxy S5 */
   .carousel-container {
     position: relative;
-    width: 390px;
+    max-width: 390px;
     height: 306px;
     margin: 0 auto;
   }
-  
+
   .carousel-slide {
-    width: 100%; /* Ocupa toda a largura disponível */
-    height: 510px;
+    max-width: 390px;
+    height: 306px;
     color: #000000;
     background: var(--bk-color-carousel);
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .slide_one {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-
+    width: 390px;
+    height: 306px;
   }
-  
-  .slide_one > div {
-    max-width: 390px;
-    height: 510px;
-    width: 100%;
+  /*  */
+  .slide_one {
+    width: 390px;
+    height: 306px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    div:nth-child(1) {
-      height: 510px;
-      width: 685px;
+    justify-content: flex-start;
+
+    /* ;container_img_carousel */
+    .container_img_carousel {
+      position: absolute;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: flex-end;
-      mix-blend-mode: darken;
+
+      top: 0;
+      width: 390px;
+      height: 306px;
+      img {
+        left: -98px;
+        position: absolute;
+      }
     }
-    div:nth-child(2) {
-      height: 510px;
-      width: 685px;
+    /* container_text_sale_carousel */
+    .container_text_sale_carousel {
+      height: 164px;
+      width: 139px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      position: absolute;
+      top: 0;
+      margin-left: 216px;
+      z-index: 20;
+      margin-top: 71px;
+
+      div {
+        width: 139px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .titulo-box {
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        word-spacing: 0.3rem;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1;
+        margin-right: 30px;
+      }
+      h1 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 40%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+      }
+      h3 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+        word-spacing: 10px;
+      }
+      h2 {
+        width: 580px;
+        height: 34px;
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+      }
     }
   }
-  
+
   .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
   }
-  
+
   .prev-button {
     left: 10px;
     background-color: var(--colorbg-white);
@@ -141,7 +233,7 @@
     padding: 10px;
     cursor: pointer;
   }
-  
+
   .next-button {
     right: 10px;
     background-color: var(--colorbg-white);
@@ -149,7 +241,6 @@
     padding: 10px;
     cursor: pointer;
   }
-  
 }
 
 /* 📱 Celulares médios/grandes (modo retrato) */
@@ -179,27 +270,26 @@
     width: 1920px;
     height: 510px;
     margin: 0 auto;
- 
   }
-  
+
   .carousel-slide {
     width: 100%; /* Ocupa toda a largura disponível */
     height: 510px;
     color: #000000;
     background: var(--bk-color-carousel);
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .slide_one {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  
+
   .slide_one > div {
     max-width: 100%;
     height: 510px;
@@ -208,30 +298,61 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    div:nth-child(1) {
-      height: 510px;
-      width: 685px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      mix-blend-mode: darken;
-    }
-    div:nth-child(2) {
+    /* container_text_sale_carousel */
+    .container_text_sale_carousel {
       height: 510px;
       width: 685px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+      div {
+        width: 576px;
+        height: 244.98px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 12px;
+      }
+      h1 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+      }
+      h3 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 25px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+        word-spacing: 10px;
+      }
+      h2 {
+        width: 580px;
+        height: 34px;
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 60px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+      }
     }
   }
-  
+
   .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
   }
-  
+
   .prev-button {
     left: 10px;
     background-color: var(--colorbg-white);
@@ -239,7 +360,7 @@
     padding: 10px;
     cursor: pointer;
   }
-  
+
   .next-button {
     right: 10px;
     background-color: var(--colorbg-white);

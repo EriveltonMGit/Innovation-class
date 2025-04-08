@@ -112,13 +112,14 @@
 .container_areaa_register {
   background-color: var(--colorbg-white);
   position: absolute;
-  top: 4869px;
+  top: 3929px;
   width:358px;
   height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   .title_register{
     display: flex;
     align-items: center;
@@ -195,6 +196,7 @@
         text-decoration: underline;
         font-family: var(--font-nunito-sans), sans-serif;
         margin-bottom: 0;
+     
       }
       #check {
         width: 10px;
