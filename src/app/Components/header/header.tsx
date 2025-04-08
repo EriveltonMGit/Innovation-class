@@ -1,14 +1,44 @@
-// IMPORTAÇÃO DO CSS
+"use client";
 import "./header.css";
-// IMPORTAÇÃO IMG DO NEXT
 import Image from "next/image";
-// IMPORTAÇÃO DOS COMPOENTES DO ANTDESING
-import { Input } from 'antd';
-import { SearchOutlined,ShoppingCartOutlined} from '@ant-design/icons';
-// IMPORTAÇÃO COMPONETES 
-
+import { Input } from "antd";
+import {
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
+import { useEffect, useRef, useState } from "react";
 import Categories from "../category/categories";
+
 function Header() {
+  const [searchValue, setSearchValue] = useState("");
+  const [searchMessage, setSearchMessage] = useState("");
+  const inputRef = useRef(null); // Referência para a área de input e mensagem
+
+  const handleSearch = () => {
+    if (searchValue.trim() !== "") {
+      setSearchMessage(`Você buscou por: '${searchValue}'`);
+    } else {
+      setSearchMessage("");
+    }
+  };
+
+  // Detectar clique fora do input
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        inputRef.current &&
+        !(inputRef.current as HTMLElement).contains(event.target as Node)
+      ) {
+        setSearchMessage("");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       {/* Área de ofertas */}
@@ -20,32 +50,60 @@ function Header() {
           </p>
         </div>
       </main>
+    
       <section className="container_header">
         {/* Área logo + input pesquisa + cadastro + carrinho */}
         <main className="container_area_register_">
-            {/* logo */}
+          {/* logo */}
           <div className="logo_">
-          <Image src="/img/icons/Grupo-21089.webp" alt="Logo do site" width={200} height={100} priority />
+            <Image
+              src="/img/icons/Grupo-21089.webp"
+              alt="Logo do site"
+              width={200}
+              height={100}
+              priority
+            />
           </div>
+
           {/* input de pesquisa */}
-          <div className="area_input">
-          <Input placeholder="Digite aqui o que você procura..." suffix={<SearchOutlined />}  allowClear />
+          <div className="area_input" ref={inputRef}>
+            <Input
+              placeholder="Digite aqui o que você procura..."
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              suffix={
+                <SearchOutlined
+                  onClick={handleSearch}
+                  style={{ cursor: "pointer" }}
+                />
+              }
+              allowClear
+            />
+            {/* Mensagem de busca */}
+            {searchMessage && <p className="search-message">{searchMessage}</p>}
           </div>
+
           {/* Área registro + carrinho */}
           <div className="area_register">
-             <div className="primery-group">
-             <Image src="/img/icons/Grupo-19210.webp" alt="Logo do site" width={200} height={100} priority /> 
-             <p>Olá, Nome cliente!</p>
-              
-             </div>
-             <div className="two-group">
-             <ShoppingCartOutlined />
-             </div>
+            <div className="primery-group">
+              <Image
+                src="/img/icons/Grupo-19210.webp"
+                alt="Logo do site"
+                width={200}
+                height={100}
+                priority
+              />
+              <p>Olá, Nome cliente!</p>
+            </div>
+            <div className="two-group">
+              <ShoppingCartOutlined />
+            </div>
           </div>
         </main>
+
         {/* Área menu de Categorias */}
         <main className="container_area_category">
-             <Categories></Categories>
+          <Categories />
         </main>
       </section>
     </>
