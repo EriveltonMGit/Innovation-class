@@ -1,6 +1,184 @@
 /* container_banner_one */
 .container_banner_one {
   margin: 0 auto;
+  width: 100%;
+  height: 747px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1328px;
+
+  .are_img_banner_one {
+    width: 652px;
+    height: 747px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--bg-color-banner);
+    img {
+      width: 523.38px;
+      height: 528.17px;
+      /* rotate: 7.54deg; */
+    }
+  }
+}
+
+.area_content_banner_one {
+  width: 652px;
+  height: 747px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div {
+    width: 487px;
+    height: 546px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  h1 {
+    width: 487px;
+    height: 42px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    color: var(--color-text-bolder);
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    width: 487px;
+    height: 225px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: var(--color-text-bolder);
+    margin-bottom: 0;
+  }
+}
+
+
+/* ==============  MEDIA SCREEN ============== */
+
+/* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_banner_one */
+.container_banner_one {
+  margin: 0 auto;
+  width: 390px;
+  height: 732px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 1328px;
+
+
+  .are_img_banner_one {
+    width: 391px;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--bg-color-banner);
+   
+  }
+
+}
+
+.area_content_banner_one {
+  width: 390px;
+  height: 732px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;    
+  white-space: normal;      
+  overflow-wrap: break-word;
+  position: relative;
+  div {
+
+    width: 343px;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    word-wrap: break-word;      
+    white-space: normal;        
+    overflow-wrap: break-word;
+  }
+  h1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 343px;
+    height: 34px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    color: var(--color-text-bolder);
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    width: 335px;
+    height: 225px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: var(--color-text-bolder);
+    margin-bottom: 0;
+  }
+}
+.img_banner_one {
+  width: 5vw;
+ 
+
+
+}
+}
+
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px){
+  /* container_banner_one */
+.container_banner_one {
+  margin: 0 auto;
   width: 1177px;
   height: 747px;
   display: flex;
@@ -63,4 +241,72 @@
     color: var(--color-text-bolder);
     margin-bottom: 0;
   }
+}
+
+  /* container_banner_one */
+.container_banner_one {
+  margin: 0 auto;
+  width: 1177px;
+  height: 747px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1328px;
+  left: 371.5px;
+
+  .are_img_banner_one {
+    width: 652px;
+    height: 747px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--bg-color-banner);
+    img {
+      width: 523.38px;
+      height: 528.17px;
+      rotate: 7.54deg;
+    }
+  }
+}
+
+.area_content_banner_one {
+  width: 652px;
+  height: 747px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div {
+    width: 487px;
+    height: 546px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  h1 {
+    width: 487px;
+    height: 42px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    color: var(--color-text-bolder);
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    width: 487px;
+    height: 225px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: var(--color-text-bolder);
+    margin-bottom: 0;
+  }
+}
 }

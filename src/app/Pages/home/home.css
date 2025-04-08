@@ -1,10 +1,52 @@
-
-
-
 /* container_carousel */
-.container_carousel{
+.container_carousel {
+  width: 100%;
+  height: 510px;
+  display: flex;
+  align-items: center;
+}
+
+/* ==============  MEDIA SCREEN ============== */
+
+/* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_carousel */
+.container_carousel {
+  width: 390px;
+    height: 306px;
+  display: flex;
+  align-items: center;
+}
+}
+
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px) {
+  /* container_carousel */
+  .container_carousel {
     width: 100%;
     height: 510px;
     display: flex;
     align-items: center;
+  }
 }

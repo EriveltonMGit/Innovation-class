@@ -51,12 +51,9 @@ function One() {
         <Image
           src="/img/dropdown/img_1.webp"
           alt="Imagem de categoria"
-          width={236}
-          height={298}
-          style={{
-            borderRadius: "10px",
-            objectFit: "cover",
-          }}
+          width={106}
+          height={50}
+         
         />
         <div className="linear-gradient"></div>
         <div className="content_img_drop">

@@ -1,5 +1,464 @@
 /* footer_ */
 .footer_ {
+  width: 100%;
+  height: 597px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 5339px;
+}
+.content_links_mobile {
+  display: none;
+}
+/* content_footer_one */
+.content_footer_one {
+  width: 100%;
+  height: 386px;
+  background-color: var(--bg-color-footer);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  .contet_links {
+    width: 1160px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div:nth-child(1) {
+      width: 192px;
+      height: 93px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    /* icons_social */
+    .icons_social {
+      width: 193.6px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    div:nth-child(2) {
+      width: 186px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+    }
+    div:nth-child(3) {
+      width: 173px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+    }
+    div:nth-child(4) {
+      width: 245px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+      p {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+      }
+    }
+  }
+  /* content_icons */
+  .content_icons {
+    width: 545.29px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 26.2px;
+    }
+  }
+}
+
+/* content_footer_two */
+.content_footer_two {
+  width: 100%;
+  height: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div:nth-child(1) {
+    width: 1074px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      font-size: 12px;
+    }
+  }
+  div:nth-child(2) {
+    width: 295px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-image: url("/img/footer/Grupo-9962.webp");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
+}
+/* ==============  MEDIA SCREEN ============== */
+
+/* 📱 Celulares pequenos (modo retrato) */
+@media (max-width:390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* footer_ */
+.footer_ {
+  width: 390px;
+  height: 666.67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 5239px;
+
+}
+
+/* content_footer_one */
+.content_footer_one {
+  width: 390px;
+  height: 386px;
+  background-color: var(--bg-color-footer);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  .contet_links {
+    width: 194px;
+    height:93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      width: 192px;
+      height: 93px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    /* icons_social */
+    .icons_social {
+      width: 193.6px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    div:nth-child(2) {
+      width: 186px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      display: none;
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+    }
+    div:nth-child(3) {
+      width: 173px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      display: none;
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+    }
+    div:nth-child(4) {
+      width: 245px;
+      height: 142px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      display: none;
+      h4 {
+        color: var(--color-text-bolder);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-style: 12px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+      a {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+        transition: 0.5s all;
+      }
+      a:hover {
+        color: var(--bg-sale);
+      }
+      p {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--color-text-sub-menu);
+      }
+    }
+  }
+  /* content_icons */
+  .content_icons {
+    width: 288px;
+    height: 64.67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+   
+    img {
+      width: 26.2px;
+    }
+  }
+}
+
+/* content_footer_two */
+.content_footer_two {
+  width:358px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div:nth-child(1) {
+    width:358px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      font-size: 12px;
+      width:358px;
+    }
+  }
+  div:nth-child(2) {
+    width: 295px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-image: url("/img/footer/Grupo-9962.webp");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    
+  }
+}
+.content_links_mobile {
+  display: block;
+
+  width: 358px;
+}
+
+.accordion {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  span{
+    color: #005CFF;
+  }
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.accordion-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  padding-top: 10px;
+}
+
+.accordion-content a,
+.accordion-content p,
+.accordion-content h4 {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+}
+
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+  .content_links_mobile {
+    display: none;
+  }
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+  .content_links_mobile {
+    display: none;
+  }
+}
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px){
+  /* footer_ */
+.footer_ {
   width: 1920px;
   height: 597px;
   display: flex;
@@ -9,7 +468,9 @@
   position: absolute;
   top: 5339px;
 }
-
+.content_links_mobile {
+  display: none;
+}
 /* content_footer_one */
 .content_footer_one {
   width: 1920px;
@@ -181,4 +642,5 @@
     background-position: center;
     background-size: cover;
   }
+}
 }

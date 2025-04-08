@@ -35,3 +35,110 @@
       }
     }
 }
+
+/* ==============  MEDIA SCREEN ============== */
+
+/* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  
+
+/* econtainer_banner_four */
+.container_banner_four{
+  width: 390px;
+  height: 449px;
+  background-color: var(--bg-color-banner);
+  position: absolute;
+  top: 4348px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/img/banner-four/b2623f6b33f45e480c729d0fd2363189.webp');
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  backdrop-filter: blur(4px);
+
+  div{
+    width: 390px; 
+    height: 75px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var( --bg-sale) ;
+    p{
+      color: var(--color-text-white);
+      font-weight: 400;
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0%;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+}
+}
+
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px){
+  
+
+/* econtainer_banner_four */
+.container_banner_four{
+  width: 100%;
+  height: 660px;
+  background-color: var(--bg-color-banner);
+  position: absolute;
+  top: 4348px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/img/banner-four/b2623f6b33f45e480c729d0fd2363189.webp');
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  backdrop-filter: blur(4px);
+
+  div{
+    width: 1920px; 
+    height: 132px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var( --bg-sale) ;
+    p{
+      color: var(--color-text-white);
+      font-weight: 400;
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-size: 30px;
+      line-height: 140%;
+      letter-spacing: 0%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+}
