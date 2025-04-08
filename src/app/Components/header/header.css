@@ -205,18 +205,19 @@
     height: 52px;
     background-color: var(--bg-sale);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     text-align: center;
 
     /* text-sale_ */
     .text-sale_ {
-      width: 546px;
-      height: 22px;
-      left: 687px;
+      width: 346px;
+      height: 44px;
+      left: 22px;
       border-radius: 4px;
       display: flex;
       top: 4px;
+   
       font-family: var(--font-nunito-sans), sans-serif;
       h5 {
         font-family: var(--font-nunito-sans), sans-serif;

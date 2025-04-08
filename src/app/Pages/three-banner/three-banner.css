@@ -79,7 +79,7 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 2895px;
+  top: 2636px;
 
   .are_img_banner_three {
     width: 391px;
@@ -136,6 +136,7 @@
     letter-spacing: 5%;
     color: var(--color-text-bolder);
     margin-bottom: 0;
+    
   }
 }
 }
