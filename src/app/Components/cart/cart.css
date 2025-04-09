@@ -98,8 +98,235 @@
 }
 /* ==============  MEDIA SCREEN ============== */
 
+
+
+
+
+
+
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px){
+  .cart-container {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 999;
+    margin-top: 0px;
+    margin-right: 0px;
+    overflow-y: scroll;
+  }
+  
+  .cart-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    color: #888;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .cart-image {
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cart-details {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    font-family: var(--font-nunito-sans), sans-serif;
+  
+    /* strong */
+    strong{
+  
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: var( --color-text);
+    }
+    /* span */
+    span{
+  
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: var( --color-text);
+    }
+  }
+  
+  .go-to-bag-button {
+    background-color: var(  --bg-sale);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .go-to-bag-button:hover {
+    background-color: var(--color-text);
+  }
+  .remove-btn {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: darkred;
+  }
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+
 /* 📱 Celulares pequenos (modo retrato) */
 
+@media (max-width: 480px){
+  .cart-container {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 999;
+    margin-right: -35px;
+  }
+  
+  .cart-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    color: #888;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-family: var(--font-nunito-sans), sans-serif;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .cart-image {
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .cart-details {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    font-family: var(--font-nunito-sans), sans-serif;
+  
+    /* strong */
+    strong{
+  
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: var( --color-text);
+    }
+    /* span */
+    span{
+  
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      color: var( --color-text);
+    }
+  }
+  
+  .go-to-bag-button {
+    background-color: var(  --bg-sale);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .go-to-bag-button:hover {
+    background-color: var(--color-text);
+  }
+  .remove-btn {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: darkred;
+  }
+}
 @media (max-width: 390px){
   .cart-container {
     background: white;
@@ -199,30 +426,7 @@
     color: darkred;
   }
 }
-
-
-/* 📱 Celulares médios/grandes (modo retrato) */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
-}
-
-/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
-}
-
-/* 💻 Laptops e desktops menores (modo paisagem) */
-@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
-}
-
-/* 🖥️ Telas grandes (HD ou superiores) */
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
-  /* Ex: monitores full HD padrão */
-}
-
-/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px){
+@media (max-width: 320px){
   .cart-container {
     background: white;
     border: 1px solid #ccc;
@@ -231,9 +435,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 999;
-    margin-top: 70px;
-    margin-right: 50px;
-    overflow-y: scroll;
+    margin-right: -25px;
   }
   
   .cart-title {

@@ -197,7 +197,399 @@
 
 /* ==============  MEDIA SCREEN ============== */
 
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px) {
+  /* Ex: monitores ultrawide, 4K e setups grandes */
+  /* HEADER CONTAINER */
+  .container_header {
+    width: 1920px;
+    height: 148px;
+    background-color: var(--colorbg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 16% #00000029;
+    z-index: 1000;
+  }
+
+  /* sale_ */
+  .sale_ {
+    width: 100%;
+    height: 30px;
+    background-color: var(--bg-sale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-sale_ */
+    .text-sale_ {
+      width: 546px;
+      height: 22px;
+      left: 687px;
+      border-radius: 4px;
+      display: flex;
+      top: 4px;
+      font-family: var(--font-nunito-sans), sans-serif;
+      h5 {
+        font-family: var(--font-nunito-sans), sans-serif;
+      }
+      p {
+        color: var(--colorbg-white);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        span {
+          background-color: var(--bg-sale-desc);
+          width: 63px;
+          height: 16px;
+          top: 7px;
+          left: 732px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  /* container_area_register_ */
+  .container_area_register_ {
+    width: 1261px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* logo_ */
+    .logo_ {
+      width: 152.58px;
+      height: 27.08px;
+      top: 52px;
+      left: 330px;
+    }
+    /* area_input */
+    .area_input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 579px;
+      height: 38px;
+      top: 47px;
+      left: 949px;
+      input {
+        width: 579px;
+      }
+    }
+    /* area_register */
+    .area_register {
+      width: 164.31px;
+      height: 28px;
+      top: 52px;
+      left: 1417px;
+      gap: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* primery-group */
+      .primery-group {
+        width: 115.57px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        img {
+          width: 20.57px;
+          height: 24px;
+        }
+        p {
+          width: 87px;
+          height: 28px;
+          font-family: var(--font-nunito-sans), sans-serif;
+          left: 28.57px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 0%;
+          margin-bottom: 0;
+        }
+      }
+      /* two-group */
+      .two-group {
+        width: 24.74px;
+        height: 24px;
+        .anticon {
+          font-size: 24.74px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  /* container_area_category */
+  .container_area_category {
+    width: 1261px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
+  .custom-hover {
+    position: relative;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  /* Efeito de fundo deslizante */
+  .custom-hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--color-bg); /* Cor do efeito */
+    transition: height 0.3s ease-in-out;
+    z-index: 0;
+  }
+  .custom-hover:hover::after {
+    height: 100%;
+  }
+  /*  Garante que o span dentro do li fique branco ao passar o mouse */
+  .custom-hover:hover span {
+    color: white !important;
+  }
+}
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
 /* 📱 Celulares pequenos (modo retrato) */
+
+@media (max-width: 480px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* HEADER CONTAINER */
+  .container_header {
+    width: 480px;
+    
+    height: 132px;
+    background-color: var(--colorbg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 16% #00000029;
+    z-index: 1000;
+
+  }
+  /* sale_ */
+  .sale_ {
+    width: 100%;
+    height: 52px;
+    background-color: var(--bg-sale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* text-sale_ */
+    .text-sale_ {
+      width: 346px;
+      height: 44px;
+      left: 22px;
+      border-radius: 4px;
+      display: flex;
+      top: 4px;
+   
+      font-family: var(--font-nunito-sans), sans-serif;
+      h5 {
+        font-family: var(--font-nunito-sans), sans-serif;
+      }
+      p {
+        color: var(--colorbg-white);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        span {
+          background-color: var(--bg-sale-desc);
+          width: 63px;
+          height: 16px;
+          top: 7px;
+          left: 732px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  /* container_area_register_ */
+  .container_area_register_ {
+    width: 480px;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    /* logo_ */
+    .logo_ {
+      width: 148px;
+      height: 26.28px;
+      margin-top: 22.36px;
+      left: 120.93px;
+    }
+    /* area_input */
+    .area_input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 361px;
+      height: 40px;
+      top: 47px;
+      left: 949px;
+      margin-bottom: 16px;
+      margin-top: 27.36px;
+      input {
+        width: 361px;
+      height: 40px;
+      }
+    }
+    
+    .search-message {
+      width: 361px; /* ou uma largura máxima */
+      max-width: 361px;
+      font-size: 14px;
+      color: var(--color-text);
+      background-color: var(--colorbg-white);
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      box-shadow: 1px 1px 1rem #00000029;
+      border-radius: 8px;
+      padding: 10px 20px;
+
+      position: relative;
+      position: absolute;
+      margin-top: 110px;
+
+      word-wrap: break-word;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+
+    /* area_register */
+    .area_register {
+      width: 164.31px;
+      height: 28px;
+      top: 52px;
+      left: 1417px;
+      gap: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      /* primery-group */
+      .primery-group {
+        width: 115.57px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        gap: 8px;
+        img {
+          width: 20.57px;
+          height: 24px;
+          display: none;
+        }
+        p {
+          width: 87px;
+          height: 28px;
+          font-family: var(--font-nunito-sans), sans-serif;
+          left: 28.57px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 0%;
+          margin-bottom: 0;
+          display: none;
+        }
+      }
+      /* two-group */
+      .two-group {
+        width: 24.74px;
+        height: 24px;
+        position: absolute;
+        top: 0;
+        margin-top: -218px;
+        right: 0;
+        margin-right: -150px;
+      
+        .anticon {
+          font-size: 24.74px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  /* container_area_category */
+  .container_area_category {
+    width:390px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 7000;
+    
+   
+  }
+ 
+  /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
+  .custom-hover {
+    position: relative;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  /* Efeito de fundo deslizante */
+  .custom-hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--color-bg); /* Cor do efeito */
+    transition: height 0.3s ease-in-out;
+    z-index: 0;
+  }
+  .custom-hover:hover::after {
+    height: 100%;
+  }
+  /*  Garante que o span dentro do li fique branco ao passar o mouse */
+  .custom-hover:hover span {
+    color: white !important;
+  }
+}
 
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
@@ -408,33 +800,12 @@
   }
 }
 
-/* 📱 Celulares médios/grandes (modo retrato) */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
-}
-
-/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
-}
-
-/* 💻 Laptops e desktops menores (modo paisagem) */
-@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
-}
-
-/* 🖥️ Telas grandes (HD ou superiores) */
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
-  /* Ex: monitores full HD padrão */
-}
-
-/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px) {
-  /* Ex: monitores ultrawide, 4K e setups grandes */
+@media (max-width:320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
   /* HEADER CONTAINER */
   .container_header {
-    width: 1920px;
-    height: 148px;
+    width: 300px;
+    height: 132px;
     background-color: var(--colorbg-white);
     display: flex;
     align-items: center;
@@ -443,23 +814,25 @@
     box-shadow: 0px 0px 16% #00000029;
     z-index: 1000;
   }
-
   /* sale_ */
   .sale_ {
-    width: 100%;
-    height: 30px;
+    width: 320px;
+    height: 52px;
     background-color: var(--bg-sale);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
     /* text-sale_ */
     .text-sale_ {
-      width: 546px;
-      height: 22px;
-      left: 687px;
+      width: 320px;
+      height: 44px;
+      left: 22px;
       border-radius: 4px;
       display: flex;
       top: 4px;
+   
       font-family: var(--font-nunito-sans), sans-serif;
       h5 {
         font-family: var(--font-nunito-sans), sans-serif;
@@ -484,32 +857,58 @@
 
   /* container_area_register_ */
   .container_area_register_ {
-    width: 1261px;
-    height: 74px;
+    width: 320px;
+    height: 132px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 
     /* logo_ */
     .logo_ {
-      width: 152.58px;
-      height: 27.08px;
-      top: 52px;
-      left: 330px;
+      width: 148px;
+      height: 26.28px;
+      margin-top: 22.36px;
+      left: 120.93px;
     }
     /* area_input */
     .area_input {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 579px;
-      height: 38px;
+      width: 280px;
+      height: 40px;
       top: 47px;
       left: 949px;
+      margin-bottom: 16px;
+      margin-top: 27.36px;
       input {
-        width: 579px;
+        width: 280px;
+      height: 40px;
       }
     }
+    
+    .search-message {
+      width: 320px;
+      max-width: 361px;
+      font-size: 14px;
+      color: var(--color-text);
+      background-color: var(--colorbg-white);
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400;
+      box-shadow: 1px 1px 1rem #00000029;
+      border-radius: 8px;
+      padding: 10px 20px;
+
+      position: relative;
+      position: absolute;
+      margin-top: 110px;
+
+      word-wrap: break-word;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+
     /* area_register */
     .area_register {
       width: 164.31px;
@@ -520,6 +919,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    
       /* primery-group */
       .primery-group {
         width: 115.57px;
@@ -527,10 +927,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+
         gap: 8px;
         img {
           width: 20.57px;
           height: 24px;
+          display: none;
         }
         p {
           width: 87px;
@@ -542,12 +945,19 @@
           line-height: 14px;
           letter-spacing: 0%;
           margin-bottom: 0;
+          display: none;
         }
       }
       /* two-group */
       .two-group {
         width: 24.74px;
         height: 24px;
+        position: absolute;
+        top: 0;
+        margin-top: -218px;
+        right: 0;
+        margin-right: -90px;
+      
         .anticon {
           font-size: 24.74px;
           cursor: pointer;
@@ -558,14 +968,18 @@
 
   /* container_area_category */
   .container_area_category {
-    width: 1261px;
+    width: 320px;
     height: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 0;
+    z-index: 7000;
+    
+   
   }
-
+ 
   /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
   .custom-hover {
     position: relative;
