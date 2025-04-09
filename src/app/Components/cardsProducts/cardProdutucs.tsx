@@ -6,7 +6,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useCartStore } from "../../zustand/cartStore";
 import toast from "react-hot-toast";
 import { Produto } from "../../types/produto";
-
+import { salvarProdutoNoServidor } from "../../services/product.service";
 function CardProducts() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -209,9 +209,31 @@ function CardProducts() {
     setCurrentSlide(index);
   };
 
-  const handleAddToCart = (produto: Produto) => {
-    addToCart(produto);
-    toast.success("Produto adicionado ao carrinho!");
+  const handleAddToCart = async (produto: Produto) => {
+    try {
+      const sucesso = await salvarProdutoNoServidor(produto);
+
+      if (sucesso) {
+        setTimeout(() => {
+          addToCart(produto); // Atualiza o estado do carrinho
+       
+          toast.success("Produto adicionado ao carrinho com sucesso!", {
+                style: {
+                  fontSize: "14px",
+                  maxWidth: "400px", 
+                  whiteSpace: "nowrap", 
+                  overflow: "hidden",
+                  textOverflow: "ellipsis", 
+                },
+              });
+        }, 1000); // tempo de 1.5 segundos
+      } else {
+        toast.error("Erro ao salvar o produto no servidor.");
+      }
+    } catch (error) {
+      console.error("Erro ao conectar com o servidor JSON:", error);
+      toast.error("Erro ao conectar com o servidor JSON.");
+    }
   };
 
   const handleVerMaisClick = () => {
