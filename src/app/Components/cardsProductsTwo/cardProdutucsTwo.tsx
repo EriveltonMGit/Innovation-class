@@ -21,7 +21,7 @@ function CardProductsTwo() {
       {
         id: 1,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -31,7 +31,7 @@ function CardProductsTwo() {
       {
         id: 2,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -41,7 +41,7 @@ function CardProductsTwo() {
       {
         id: 3,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -51,7 +51,7 @@ function CardProductsTwo() {
       {
         id: 4,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -61,7 +61,7 @@ function CardProductsTwo() {
       {
         id: 5,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -71,7 +71,7 @@ function CardProductsTwo() {
       {
         id: 6,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -81,7 +81,7 @@ function CardProductsTwo() {
       {
         id: 7,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -91,7 +91,7 @@ function CardProductsTwo() {
       {
         id: 8,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -101,7 +101,7 @@ function CardProductsTwo() {
       {
         id: 9,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -111,7 +111,7 @@ function CardProductsTwo() {
       {
         id: 10,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao:
           "Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum...",
         precoAnterior: 100,
@@ -122,7 +122,7 @@ function CardProductsTwo() {
       {
         id: 11,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -132,7 +132,7 @@ function CardProductsTwo() {
       {
         id: 12,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -142,7 +142,7 @@ function CardProductsTwo() {
       {
         id: 13,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -152,7 +152,7 @@ function CardProductsTwo() {
       {
         id: 14,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -162,7 +162,7 @@ function CardProductsTwo() {
       {
         id: 15,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -214,7 +214,8 @@ function CardProductsTwo() {
   };
 
   return (
-    <section className="container_cards_two ">
+    <section className="container_cards_two " data-aos="fade-up"
+    data-aos-duration="2000">
      
 
       <div className="cards_title_area">

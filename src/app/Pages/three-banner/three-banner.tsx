@@ -5,7 +5,8 @@ import Image from "next/image";
 function BannerViewThree() {
   return (
     <>
-      <section className="container_banner_three">
+      <section className="container_banner_three" data-aos="fade-up"
+     data-aos-duration="2000">
         <div className="are_img_banner_three">
           <Image
             src="/img/banner-one/Free_Mug_Mockup_2.webp"

@@ -4,7 +4,8 @@ import { Input } from "antd";
 
 function AreaRegister() {
   return (
-    <section className="container_areaa_register">
+    <section className="container_areaa_register" data-aos="fade-up"
+    data-aos-duration="2000">
       <div className="title_register">
         <h1>Cadastre-se na nossa</h1>
         <span>newsletter</span>

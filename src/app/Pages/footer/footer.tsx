@@ -20,7 +20,8 @@ function Footer() {
   };
 
   return (
-    <section className="footer_">
+    <section className="footer_" data-aos="fade-up"
+    data-aos-duration="2000">
       {/* DESKTOP (versão padrão) */}
       <main className="content_footer_one">
         <div className="contet_links">

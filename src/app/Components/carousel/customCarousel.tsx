@@ -31,7 +31,7 @@ const CustomCarousel: React.FC = () => {
         <div className="carousel-slide slide_one ">
           <div>
             <div className="container_img_carousel">
-              <img src="/img/carousel/Rectangle 10.png" alt="" />
+              <img src="/img/carousel/img_carousel_one.webp" alt="" />
             </div>
             <div className="container_text_sale_carousel">
               <div>
@@ -45,7 +45,7 @@ const CustomCarousel: React.FC = () => {
         <div className="carousel-slide slide_one ">
           <div>
             <div className="container_img_carousel">
-              <img src="/img/carousel/Rectangle 10.png" alt="" />
+              <img src="/img/carousel/img_carousel_one.webp" alt="" />
             </div>
             <div className="container_text_sale_carousel">
               <div>
@@ -59,7 +59,7 @@ const CustomCarousel: React.FC = () => {
         <div className="carousel-slide slide_one ">
           <div>
             <div className="container_img_carousel">
-              <img src="/img/carousel/Rectangle 10.png" alt="" />
+              <img src="/img/carousel/img_carousel_one.webp" alt="" />
             </div>
             <div className="container_text_sale_carousel">
               <div>
@@ -73,7 +73,7 @@ const CustomCarousel: React.FC = () => {
         <div className="carousel-slide slide_one ">
           <div>
             <div className="container_img_carousel">
-              <img src="/img/carousel/Rectangle 10.png" alt="" />
+              <img src="/img/carousel/img_carousel_one.webp" alt="" />
             </div>
             <div className="container_text_sale_carousel">
               <div>

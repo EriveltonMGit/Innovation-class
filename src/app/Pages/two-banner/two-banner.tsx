@@ -6,7 +6,8 @@ import Image from "next/image";
 function BannerViewTwo() {
   return (
     <>
-      <section className="two_banner_container_">
+      <section className="two_banner_container_" data-aos="fade-up"
+     data-aos-duration="2000">
         <main className="content_baner">
           <div className="content_banner_two">
             <main>
