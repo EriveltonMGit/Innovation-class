@@ -1,34 +1,13 @@
-// src/store/cartStore.ts
 import { create } from 'zustand';
+import { Produto } from '../types/produto';
 
-type Produto = {
-  id: number;
-  nome: string;
-  preco: number;
+type CartStore = {
+  cartItems: Produto[];
+  addToCart: (item: Produto) => void;
 };
 
-type CartState = {
-  items: Produto[];
-  addItem: (item: Produto) => void;
-  removeItem: (id: number) => void;
-  clearCart: () => void;
-  getItemCount: () => number;
-};
-
-export const useCartStore = create<CartState>((set, get) => ({
-  items: [],
-  addItem: (item) => {
-    set((state) => ({
-      items: [...state.items, item],
-    }));
-  },
-  removeItem: (id) => {
-    set((state) => ({
-      items: state.items.filter((item) => item.id !== id),
-    }));
-  },
-  clearCart: () => {
-    set({ items: [] });
-  },
-  getItemCount: () => get().items.length,
+export const useCartStore = create<CartStore>((set) => ({
+  cartItems: [],
+  addToCart: (item) =>
+    set((state) => ({ cartItems: [...state.cartItems, item] })),
 }));

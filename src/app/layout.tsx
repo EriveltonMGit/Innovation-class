@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Nunito_Sans, Heebo } from "next/font/google";
 import "./globals.css";
 import "antd/dist/reset.css";
+import { Toaster } from "react-hot-toast"; 
 
 // Fonte principal
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
   subsets: ["latin"],
-  weight: ["400", "600", "700"], 
+  weight: ["400", "600", "700"],
 });
 
 // Fonte secundária: Heebo
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${nunitoSans.variable} ${heebo.variable} antialiased`}>
         {children}
+        <Toaster position="top-center" /> 
       </body>
     </html>
   );

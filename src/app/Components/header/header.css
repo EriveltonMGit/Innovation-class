@@ -198,212 +198,7 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
-@media (max-width: 320px) {
-  /* Ex: iPhone SE, Galaxy S5 */
-  /* HEADER CONTAINER */
-  .container_header {
-    width: 320px;
-    height: 132px;
-    background-color: var(--colorbg-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 16% #00000029;
-    z-index: 1000;
-   
-  }
-  /* sale_ */
-  .sale_ {
-    width: 320px;
-    height: 52px;
-    background-color: var(--bg-sale);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
-    /* text-sale_ */
-    .text-sale_ {
-      width: 320px;
-      height: 44px;
-      left: 22px;
-      border-radius: 4px;
-      display: flex;
-      top: 4px;
-   
-      font-family: var(--font-nunito-sans), sans-serif;
-      h5 {
-        font-family: var(--font-nunito-sans), sans-serif;
-      }
-      p {
-        color: var(--colorbg-white);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: 0%;
-        span {
-          background-color: var(--bg-sale-desc);
-          width: 63px;
-          height: 16px;
-          top: 7px;
-          left: 732px;
-          border-radius: 4px;
-        }
-      }
-    }
-  }
-
-  /* container_area_register_ */
-  .container_area_register_ {
-    width: 320px;
-    height: 132px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-    /* logo_ */
-    .logo_ {
-      width: 148px;
-      height: 26.28px;
-      margin-top: 22.36px;
-      left: 120.93px;
-    }
-    /* area_input */
-    .area_input {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 50px;
-      top: 47px;
-      left: 949px;
-      margin-bottom: 16px;
-      margin-top: 27.36px;
-
-      input {
-        width: 200px;
- 
-      }
-    }
-    
-    .search-message {
-      width: 320px;
-      max-width: 579px;
-      margin-top: 8px;
-      font-size: 14px;
-      color: var(--color-text);
-      background-color: var(--colorbg-white);
-      font-family: var(--font-nunito-sans), sans-serif;
-      font-weight: 400;
-      box-shadow: 1px 1px 1rem #00000029;
-      border-radius: 8px;
-      padding: 10px 20px;
-
-      position: relative;
-      position: absolute;
-      margin-top: 78px;
-
-      word-wrap: break-word;
-      white-space: normal;
-      overflow-wrap: break-word;
-    }
-
-    /* area_register */
-    .area_register {
-      width: 164.31px;
-      height: 28px;
-      top: 52px;
-      left: 1417px;
-      gap: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      /* primery-group */
-      .primery-group {
-        width: 115.57px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        gap: 8px;
-        img {
-          width: 20.57px;
-          height: 24px;
-          display: none;
-        }
-        p {
-          width: 87px;
-          height: 28px;
-          font-family: var(--font-nunito-sans), sans-serif;
-          left: 28.57px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 14px;
-          letter-spacing: 0%;
-          margin-bottom: 0;
-          display: none;
-        }
-      }
-      /* two-group */
-      .two-group {
-        width: 24.74px;
-        height: 24px;
-        position: absolute;
-        top: 0;
-        margin-top: 78px;
-        right: 0;
-        margin-right: 26.91px;
-        .anticon {
-          font-size: 24.74px;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  /* container_area_category */
-  .container_area_category {
-    width: 320px;
-    height: 74px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    display: none;
-  }
-
-  /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
-  .custom-hover {
-    position: relative;
-    cursor: pointer;
-    flex: 1;
-  }
-
-  /* Efeito de fundo deslizante */
-  .custom-hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: var(--color-bg); /* Cor do efeito */
-    transition: height 0.3s ease-in-out;
-    z-index: 0;
-  }
-  .custom-hover:hover::after {
-    height: 100%;
-  }
-  /*  Garante que o span dentro do li fique branco ao passar o mouse */
-  .custom-hover:hover span {
-    color: white !important;
-  }
-}
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* HEADER CONTAINER */
@@ -417,7 +212,7 @@
     flex-direction: column;
     box-shadow: 0px 0px 16% #00000029;
     z-index: 1000;
-   
+
   }
   /* sale_ */
   .sale_ {
@@ -524,211 +319,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      /* primery-group */
-      .primery-group {
-        width: 115.57px;
-        height: 28px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        gap: 8px;
-        img {
-          width: 20.57px;
-          height: 24px;
-          display: none;
-        }
-        p {
-          width: 87px;
-          height: 28px;
-          font-family: var(--font-nunito-sans), sans-serif;
-          left: 28.57px;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 14px;
-          letter-spacing: 0%;
-          margin-bottom: 0;
-          display: none;
-        }
-      }
-      /* two-group */
-      .two-group {
-        width: 24.74px;
-        height: 24px;
-        position: absolute;
-        top: 0;
-        margin-top: 78px;
-        right: 0;
-        margin-right: 26.91px;
-        .anticon {
-          font-size: 24.74px;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  /* container_area_category */
-  .container_area_category {
-    width: 1261px;
-    height: 74px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    display: none;
-  }
-
-  /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
-  .custom-hover {
-    position: relative;
-    cursor: pointer;
-    flex: 1;
-  }
-
-  /* Efeito de fundo deslizante */
-  .custom-hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: var(--color-bg); /* Cor do efeito */
-    transition: height 0.3s ease-in-out;
-    z-index: 0;
-  }
-  .custom-hover:hover::after {
-    height: 100%;
-  }
-  /*  Garante que o span dentro do li fique branco ao passar o mouse */
-  .custom-hover:hover span {
-    color: white !important;
-  }
-}
-@media (max-width: 480px) {
-  /* Ex: iPhone SE, Galaxy S5 */
-  /* HEADER CONTAINER */
-  .container_header {
-    width: 390px;
-    height: 132px;
-    background-color: var(--colorbg-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 16% #00000029;
-    z-index: 1000;
-   
-  }
-  /* sale_ */
-  .sale_ {
-    width: 100%;
-    height: 52px;
-    background-color: var(--bg-sale);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    /* text-sale_ */
-    .text-sale_ {
-      width: 346px;
-      height: 44px;
-      left: 22px;
-      border-radius: 4px;
-      display: flex;
-      top: 4px;
-   
-      font-family: var(--font-nunito-sans), sans-serif;
-      h5 {
-        font-family: var(--font-nunito-sans), sans-serif;
-      }
-      p {
-        color: var(--colorbg-white);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: 0%;
-        span {
-          background-color: var(--bg-sale-desc);
-          width: 63px;
-          height: 16px;
-          top: 7px;
-          left: 732px;
-          border-radius: 4px;
-        }
-      }
-    }
-  }
-
-  /* container_area_register_ */
-  .container_area_register_ {
-    width: 390px;
-    height: 132px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-    /* logo_ */
-    .logo_ {
-      width: 148px;
-      height: 26.28px;
-      margin-top: 22.36px;
-      left: 120.93px;
-    }
-    /* area_input */
-    .area_input {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 361px;
-      height: 40px;
-      top: 47px;
-      left: 949px;
-      margin-bottom: 16px;
-      margin-top: 27.36px;
-      input {
-        width: 579px;
-      }
-    }
     
-    .search-message {
-      width: 100%; /* ou uma largura máxima */
-      max-width: 579px;
-      margin-top: 8px;
-      font-size: 14px;
-      color: var(--color-text);
-      background-color: var(--colorbg-white);
-      font-family: var(--font-nunito-sans), sans-serif;
-      font-weight: 400;
-      box-shadow: 1px 1px 1rem #00000029;
-      border-radius: 8px;
-      padding: 10px 20px;
-
-      position: relative;
-      position: absolute;
-      margin-top: 78px;
-
-      word-wrap: break-word;
-      white-space: normal;
-      overflow-wrap: break-word;
-    }
-
-    /* area_register */
-    .area_register {
-      width: 164.31px;
-      height: 28px;
-      top: 52px;
-      left: 1417px;
-      gap: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       /* primery-group */
       .primery-group {
         width: 115.57px;
@@ -766,6 +357,7 @@
         margin-top: 78px;
         right: 0;
         margin-right: 26.91px;
+      
         .anticon {
           font-size: 24.74px;
           cursor: pointer;
@@ -776,15 +368,18 @@
 
   /* container_area_category */
   .container_area_category {
-    width: 1261px;
+    width:390px;
     height: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 7000;
+    
+   
   }
-
+ 
   /* CUSTOMIZAÇÃO DO LI DO MENU DE OPÇÕES - HEADER  🟢*/
   .custom-hover {
     position: relative;
@@ -812,6 +407,7 @@
     color: white !important;
   }
 }
+
 /* 📱 Celulares médios/grandes (modo retrato) */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */

@@ -29,7 +29,7 @@
     }
     /* Aplica cor ao passar o mouse nos li, exceto o primeiro */
     li:not(:first-child):hover {
-      color: var( --bg-sale ); 
+      color: var(--bg-sale);
       font-weight: 700;
       cursor: pointer;
     }
@@ -55,6 +55,7 @@
     }
   }
 }
+
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
@@ -69,9 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+    display: none;
     ul {
-      width: 1259px;
+      width: 390px;
       height: 22px;
       top: 22px;
       left: 142px;
@@ -79,7 +81,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0;
-
+      display: none;
       li {
         width: 91px;
         height: 22px;
@@ -103,6 +105,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+
         a {
           display: flex;
           justify-content: space-between;
@@ -111,6 +114,20 @@
         }
       }
     }
+
+    li {
+      display: none;
+    }
+  }
+  /* ;btn_hamburguer */
+  .btn_hamburguer {
+    position: absolute;
+    top: 0;
+
+    z-index: 9000;
+    margin-top: 78px;
+    margin-left: 32px;
+    font-size: 22px;
   }
 }
 
@@ -188,4 +205,8 @@
       }
     }
   }
+  /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
