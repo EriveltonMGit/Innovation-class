@@ -1,3 +1,14 @@
 {
-  "produtos": []
+  "produtos": [
+    {
+      "id": "2262972a-a76e-40e9-8da3-1567826f4664",
+      "estado": "Novo",
+      "img": "/img/cards/img.webp",
+      "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "precoAnterior": 100,
+      "precoAtual": 79.9,
+      "qtdVezes": "10x de R$ 7,90",
+      "desconto": "10% OFF"
+    }
+  ]
 }
