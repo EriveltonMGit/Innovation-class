@@ -274,6 +274,7 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
+
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
 
@@ -362,15 +363,18 @@
 /* cards_grid */
 .cards_grid {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   gap: 17px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   padding: 10px 0;
-  width: 100%;
-  height: 100%;
+  width: 358px;
+  height: 426px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+ 
 }
 
 .cards_grid::-webkit-scrollbar {
@@ -393,7 +397,7 @@
   background: white;
   transition: transform 0.5s;
   cursor: pointer;
-
+ 
 }
 
 .card_products:hover {
@@ -435,25 +439,26 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
+ 
 }
 
 .card_image img {
-  max-width: 222px;
-  max-height: 222px;
+  width: 158px;
+  height: 158px;
   object-fit: contain;
 }
 
 /* descricao */
 .descricao {
-  width: 222px;
-  height: 39px;
+  width: 158px;
+  height: 57px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  
 }
 
 /* area_price */
@@ -512,7 +517,7 @@
 
 /* btn_add_carrinho */
 .btn_add_carrinho {
-  width: 222px;
+  width: 158px;
   height: 40px;
   background-color: var(--bg-sale);
   color: var(--color-text-white);
@@ -554,6 +559,7 @@
 }
 
 }
+
 
 /* 📱 Celulares médios/grandes (modo retrato) */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {

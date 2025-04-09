@@ -1,19 +1,22 @@
 "use client";
+
 import "./header.css";
 import Image from "next/image";
 import { Input } from "antd";
-import {
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { useEffect, useRef, useState } from "react";
 import Categories from "../category/categories";
+import { useCartStore } from "../../zustand/cartStore";
 
-function Header() {
+type HeaderProps = {
+  onToggleMenu: () => void;
+};
+
+function Header({ onToggleMenu }: HeaderProps) {
   const [searchValue, setSearchValue] = useState("");
   const [searchMessage, setSearchMessage] = useState("");
-  const inputRef = useRef(null); // Referência para a área de input e mensagem
-
+  const inputRef = useRef(null);
+  const cartItems = useCartStore((state) => state.cartItems);
   const handleSearch = () => {
     if (searchValue.trim() !== "") {
       setSearchMessage(`Você buscou por: '${searchValue}'`);
@@ -22,7 +25,6 @@ function Header() {
     }
   };
 
-  // Detectar clique fora do input
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -41,7 +43,6 @@ function Header() {
 
   return (
     <>
-      {/* Área de ofertas */}
       <main className="sale_">
         <div className="text-sale_">
           <p>
@@ -50,11 +51,9 @@ function Header() {
           </p>
         </div>
       </main>
-    
+
       <section className="container_header">
-        {/* Área logo + input pesquisa + cadastro + carrinho */}
         <main className="container_area_register_">
-          {/* logo */}
           <div className="logo_">
             <Image
               src="/img/icons/Grupo-21089.webp"
@@ -65,7 +64,6 @@ function Header() {
             />
           </div>
 
-          {/* input de pesquisa */}
           <div className="area_input" ref={inputRef}>
             <Input
               placeholder="Digite aqui o que você procura..."
@@ -79,11 +77,9 @@ function Header() {
               }
               allowClear
             />
-            {/* Mensagem de busca */}
             {searchMessage && <p className="search-message">{searchMessage}</p>}
           </div>
 
-          {/* Área registro + carrinho */}
           <div className="area_register">
             <div className="primery-group">
               <Image
@@ -96,14 +92,31 @@ function Header() {
               <p>Olá, Nome cliente!</p>
             </div>
             <div className="two-group">
-              <ShoppingCartOutlined />
+              <div style={{ position: "relative" }}>
+                <ShoppingCartOutlined style={{ fontSize: "24px" }} />
+                {cartItems.length > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-10px",
+                      background: "var( --bg-sale)",
+                      color: "white",
+                      borderRadius: "50%",
+                      padding: "2px 6px",
+                      fontSize: "12px",
+                    }}
+                  >
+                    {cartItems.length}
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         </main>
 
-        {/* Área menu de Categorias */}
         <main className="container_area_category">
-          <Categories />
+          <Categories onToggleMenu={onToggleMenu} />
         </main>
       </section>
     </>

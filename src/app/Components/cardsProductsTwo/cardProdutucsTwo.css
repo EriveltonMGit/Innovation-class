@@ -252,7 +252,8 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
-@media (max-width: 480px) {
+
+@media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_cards */
 .container_cards_two {

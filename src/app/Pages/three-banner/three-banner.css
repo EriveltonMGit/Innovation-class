@@ -67,6 +67,79 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_banner_one */
+.container_banner_three {
+  margin: 0 auto;
+  width: 391px;
+  height: 732px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 2636px;
+
+  .are_img_banner_three {
+    width: 391px;
+    height: 747px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--bg-color-banner);
+
+    img {
+      width: 391px;
+      height: 390px;
+      /* rotate: 7.54deg; */
+    }
+  }
+}
+
+.area_content_banner_three {
+  width: 343px;
+  height: 266px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div {
+    width: 343px;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+  }
+  h1 {
+    width: 343px;
+    height: 42px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    color: var(--color-text-bolder);
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+
+  p {
+    width: 343px;
+    height: 225px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: var(--color-text-bolder);
+    margin-bottom: 0;
+    
+  }
+}
+}
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_banner_one */
@@ -140,7 +213,79 @@
   }
 }
 }
+@media (max-width: 480px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_banner_one */
+.container_banner_three {
+  margin: 0 auto;
+  width: 391px;
+  height: 732px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 2636px;
 
+  .are_img_banner_three {
+    width: 391px;
+    height: 747px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--bg-color-banner);
+
+    img {
+      width: 391px;
+      height: 390px;
+      /* rotate: 7.54deg; */
+    }
+  }
+}
+
+.area_content_banner_three {
+  width: 343px;
+  height: 266px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  div {
+    width: 343px;
+    height: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8px;
+  }
+  h1 {
+    width: 343px;
+    height: 42px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    color: var(--color-text-bolder);
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 28px;
+  }
+
+  p {
+    width: 343px;
+    height: 225px;
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 5%;
+    color: var(--color-text-bolder);
+    margin-bottom: 0;
+    
+  }
+}
+}
 /* 📱 Celulares médios/grandes (modo retrato) */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
   /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */

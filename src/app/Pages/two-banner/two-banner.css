@@ -51,8 +51,8 @@
           justify-content: space-between;
 
           img {
-            height: 90px;
-            width: 90px;
+            height: 60px;
+            width: 60px;
           }
 
           p {
@@ -90,7 +90,205 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* two_banner_container_' */
+  .two_banner_container_ {
+    width: 391px;
+    height: 717px;
+    background-color: var(--bg-color-banner);
+    position: absolute;
+    top: 1863px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .content_baner{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      flex-direction: column-reverse;
+      width: 384px;
+      height: 661px;
+      
+
+      .content_banner_two {
+        width: 350px;
+        height: 349px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      
+
+        main {
+          width: 349px;
+          height: 349px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+
+          h1 {
+           
+            
+            width: 384px;
+            height: 28px;
+            font-family: var(--font-nunito-sans), sans-serif;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 4%;
+            text-transform: uppercase;
+            color: var(--color-text-bolder);
+            font-size: 20px;
+            text-align: center;
+            top: 21px;
+          }
+
+          div {
+            width: 350px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+              height: 60px;
+              width: 60px;
+            }
+
+            p {
+              font-family: var(--font-nunito-sans), sans-serif;
+              width: 276px;
+              height: 68px;
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 140%;
+              letter-spacing: 5%;
+              font-size: 16px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      main {
+        width: 349px;
+        height: 349px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 349px;
+          height: 349px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* two_banner_container_' */
+  .two_banner_container_ {
+    width: 391px;
+    height: 717px;
+    background-color: var(--bg-color-banner);
+    position: absolute;
+    top: 1863px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .content_baner{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      flex-direction: column-reverse;
+      width: 384px;
+      height: 661px;
+      
+
+      .content_banner_two {
+        width: 350px;
+        height: 349px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      
+
+        main {
+          width: 349px;
+          height: 349px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+
+          h1 {
+           
+            
+            width: 384px;
+            height: 28px;
+            font-family: var(--font-nunito-sans), sans-serif;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 4%;
+            text-transform: uppercase;
+            color: var(--color-text-bolder);
+            font-size: 20px;
+            text-align: center;
+            top: 21px;
+          }
+
+          div {
+            width: 350px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+              height: 60px;
+              width: 60px;
+            }
+
+            p {
+              font-family: var(--font-nunito-sans), sans-serif;
+              width: 276px;
+              height: 68px;
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 140%;
+              letter-spacing: 5%;
+              font-size: 16px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      main {
+        width: 349px;
+        height: 349px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 349px;
+          height: 349px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* two_banner_container_' */
   .two_banner_container_ {

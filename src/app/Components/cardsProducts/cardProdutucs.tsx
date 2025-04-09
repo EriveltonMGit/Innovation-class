@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import "./cardProdutucs.css";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
-import { useMemo } from "react";
+import { useCartStore } from "../../zustand/cartStore";
+import toast from "react-hot-toast";
+import { Produto } from '../../types/produto'; 
+
 function CardProducts() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
-
+  const addToCart = useCartStore((state) => state.addToCart);
   const CARD_WIDTH = 438;
   const GAP = 17;
   const CARDS_PER_VIEW = 3;
@@ -29,7 +32,7 @@ function CardProducts() {
         id: 2,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -39,7 +42,7 @@ function CardProducts() {
         id: 3,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -49,7 +52,7 @@ function CardProducts() {
         id: 4,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -59,7 +62,7 @@ function CardProducts() {
         id: 5,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -69,7 +72,7 @@ function CardProducts() {
         id: 6,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -79,7 +82,7 @@ function CardProducts() {
         id: 7,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -89,7 +92,7 @@ function CardProducts() {
         id: 8,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -99,7 +102,7 @@ function CardProducts() {
         id: 9,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -109,7 +112,8 @@ function CardProducts() {
         id: 10,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao:
+          "Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum...",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -119,7 +123,7 @@ function CardProducts() {
         id: 11,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -129,7 +133,7 @@ function CardProducts() {
         id: 12,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -139,7 +143,7 @@ function CardProducts() {
         id: 13,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -149,7 +153,7 @@ function CardProducts() {
         id: 14,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -159,7 +163,7 @@ function CardProducts() {
         id: 15,
         estado: "Novo",
         img: "/img/cards/img.png",
-        descricao: "Lorem ipsum...",
+        descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
         qtdVezes: "10x de R$ 7,90",
@@ -184,7 +188,8 @@ function CardProducts() {
       });
       setCurrentSlide(newSlide);
     }
-  }
+  };
+
   const scrollRight = () => {
     if (currentSlide < totalSlides - 1) {
       const newSlide = currentSlide + 1;
@@ -196,15 +201,22 @@ function CardProducts() {
     }
   };
 
-const handleScroll = () => {
-  if (!containerRef.current) return;
-  const scrollLeft = containerRef.current.scrollLeft;
-  const index = Math.round(scrollLeft / SCROLL_AMOUNT);
-  setCurrentSlide(index);
-};
+  const handleScroll = () => {
+    if (!containerRef.current) return;
+    const scrollLeft = containerRef.current.scrollLeft;
+    const index = Math.round(scrollLeft / SCROLL_AMOUNT);
+    setCurrentSlide(index);
+  };
+
+  const handleAddToCart = (produto: Produto) => {
+    addToCart(produto);
+    toast.success("Produto adicionado ao carrinho!");
+  };
 
   return (
     <section className="container_cards">
+     
+
       <div className="cards_title_area">
         <h2>Lançamentos</h2>
         <span>Ver mais</span>
@@ -243,7 +255,7 @@ const handleScroll = () => {
 
             <button
               className="btn_add_carrinho"
-              onClick={() => console.log("Adicionado:", produto)}
+              onClick={() => handleAddToCart(produto)}
             >
               Comprar
             </button>
@@ -251,7 +263,6 @@ const handleScroll = () => {
         ))}
       </div>
 
-      {/* Indicadores de slide */}
       <div className="slide-indicators">
         {Array.from({ length: Math.min(totalSlides, 3) }).map((_, i) => (
           <span

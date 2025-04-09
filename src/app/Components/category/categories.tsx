@@ -7,7 +7,11 @@ import One from "./drop-one/drop.one";
 import Two from "./drop-two/drop.two";
 import { MenuOutlined } from "@ant-design/icons";
 
-function Categories() {
+type CategoriesProps = {
+  onToggleMenu: () => void;
+};
+
+function Categories({ onToggleMenu }: CategoriesProps) {
   const [showDropdownIndex, setShowDropdownIndex] = useState<number | null>(null);
 
   const handleMouseEnter = (index: number) => {
@@ -30,7 +34,6 @@ function Categories() {
     "Departamento",
   ];
 
-  // Array de componentes de dropdown correspondentes
   const dropdownComponents = [
     <One key="one" />,
     <Two key="two" />,
@@ -41,32 +44,37 @@ function Categories() {
     <Two key="two" />,
     <Two key="two" />,
     <Two key="two" />,
-   
-    
   ];
 
   return (
-    <>
-      <section className="container_categories_">
-        <ul>
-          {categorias.map((categoria, index) => (
-            <li
-              key={index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Link href="">
-                {index === 0 && <MenuOutlined />}
-                {categoria}
-              </Link>
+   <>
+   
+   <section className="container_categories_">
+      <ul>
+        {categorias.map((categoria, index) => (
+          <li
+            key={index}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="">
+              {index === 0 && <MenuOutlined />}
+              {categoria}
+            </Link>
 
-              {/* Exibe o dropdown correspondente ao índice */}
-              {showDropdownIndex === index && dropdownComponents[index]}
-            </li>
-          ))}
-        </ul>
-      </section>
-    </>
+            {showDropdownIndex === index && dropdownComponents[index]}
+          </li>
+        ))}
+      </ul>
+
+    
+    </section>
+
+    <button className="btn_hamburguer" onClick={onToggleMenu}>
+        <MenuOutlined />
+      </button>
+   
+   </>
   );
 }
 

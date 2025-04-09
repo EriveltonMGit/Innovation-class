@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   ul {
     width: 1259px;
     height: 22px;
@@ -18,98 +18,117 @@
     justify-content: space-between;
     margin-bottom: 0;
 
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
+    li {
+      width: 91px;
+      height: 22px;
+      font-family: var(--font-nunito-sans), sans-serif;
+      font-weight: 400px;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+    }
+    /* Aplica cor ao passar o mouse nos li, exceto o primeiro */
+    li:not(:first-child):hover {
+      color: var(--bg-sale);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    li:nth-child(1) {
+      font-family: var(--font-nunito-sans), sans-serif;
       width: 152px;
       height: 22px;
       line-height: 22px;
       letter-spacing: 0%;
-      color: var(  --color-text-bolder);
+      color: var(--color-text-bolder);
       font-weight: 700;
       font-size: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      a{
+      a {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
       }
     }
-    
   }
 }
+
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_categories_ */
-.container_categories_ {
-  width: 390px;
-  height: 22px;
-  top: 108px;
-  left: 331px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-  ul {
-    width: 1259px;
+  .container_categories_ {
+    width: 390px;
     height: 22px;
-    top: 22px;
-    left: 142px;
+    top: 108px;
+    left: 331px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-    
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
-      width: 152px;
+    justify-content: center;
+    position: relative;
+    display: none;
+    ul {
+      width: 390px;
       height: 22px;
-      line-height: 22px;
-      letter-spacing: 0%;
-      color: var(  --color-text-bolder);
-      font-weight: 700;
-      font-size: 14px;
+      top: 22px;
+      left: 142px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      a{
+      justify-content: space-between;
+      margin-bottom: 0;
+      display: none;
+      li {
+        width: 91px;
+        height: 22px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+      }
+
+      li:nth-child(1) {
+        font-family: var(--font-nunito-sans), sans-serif;
+        width: 152px;
+        height: 22px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+        font-weight: 700;
+        font-size: 14px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+        }
       }
     }
-    
+
+    li {
+      display: none;
+    }
   }
-}
+  /* ;btn_hamburguer */
+  .btn_hamburguer {
+    position: absolute;
+    top: 0;
+
+    z-index: 9000;
+    margin-top: 78px;
+    margin-left: 32px;
+    font-size: 22px;
+  }
 }
 
 /* 📱 Celulares médios/grandes (modo retrato) */
@@ -120,71 +139,86 @@
 /* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
 @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
   /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 💻 Laptops e desktops menores (modo paisagem) */
 @media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
   /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 🖥️ Telas grandes (HD ou superiores) */
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
   /* Ex: monitores full HD padrão */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
   /* container_categories_ */
-.container_categories_ {
-  width: 1259px;
-  height: 22px;
-  top: 108px;
-  left: 331px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  ul {
+  .container_categories_ {
     width: 1259px;
     height: 22px;
-    top: 22px;
-    left: 142px;
+    top: 108px;
+    left: 331px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: center;
 
-   li{
-    width: 91px;
-    height: 22px;
-    font-family: var(--font-nunito-sans), sans-serif; 
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0%;
-   }
-
-    li:nth-child(1){
-      font-family: var(--font-nunito-sans), sans-serif; 
-      width: 152px;
+    ul {
+      width: 1259px;
       height: 22px;
-      line-height: 22px;
-      letter-spacing: 0%;
-      color: var(  --color-text-bolder);
-      font-weight: 700;
-      font-size: 14px;
+      top: 22px;
+      left: 142px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      a{
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      li {
+        width: 91px;
+        height: 22px;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+      }
+
+      li:nth-child(1) {
+        font-family: var(--font-nunito-sans), sans-serif;
+        width: 152px;
+        height: 22px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+        font-weight: 700;
+        font-size: 14px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 8px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+        }
       }
     }
-    
   }
+  /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
 }
 }
