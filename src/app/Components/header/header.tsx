@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import Categories from "../category/categories";
 import { useCartStore } from "../../zustand/cartStore";
 import Cart from "../cart/cart";
+import { ApiService } from "../../config/api";
 
 type HeaderProps = {
   onToggleMenu: () => void;
@@ -35,7 +36,6 @@ function Header({ onToggleMenu }: HeaderProps) {
     }
   };
 
-  // Ocultar mensagem ao clicar fora do input
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -52,14 +52,17 @@ function Header({ onToggleMenu }: HeaderProps) {
     };
   }, []);
 
-  // Carregar produtos do carrinho ao iniciar
   useEffect(() => {
-    fetch("http://localhost:3001/produtos")
-      .then((res) => res.json())
-      .then((data) => {
-        setCartItems(data);
-      })
-      .catch((err) => console.error("Erro ao carregar o carrinho:", err));
+    const loadCartItems = async () => {
+      try {
+        const produtos = await ApiService.getProdutos();
+        setCartItems(produtos);
+      } catch (err) {
+        console.error("Erro ao carregar o carrinho:", err);
+      }
+    };
+
+    loadCartItems();
   }, [setCartItems]);
 
   return (
