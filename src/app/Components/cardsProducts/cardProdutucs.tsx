@@ -5,13 +5,14 @@ import "./cardProdutucs.css";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useCartStore } from "../../zustand/cartStore";
 import toast from "react-hot-toast";
-import { Produto } from '../../types/produto'; 
-
+import { Produto } from "../../types/produto";
+import { salvarProdutoNoServidor } from "../../services/product.service";
 function CardProducts() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
   const addToCart = useCartStore((state) => state.addToCart);
+
   const CARD_WIDTH = 438;
   const GAP = 17;
   const CARDS_PER_VIEW = 3;
@@ -21,7 +22,7 @@ function CardProducts() {
       {
         id: 1,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -31,7 +32,7 @@ function CardProducts() {
       {
         id: 2,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -41,7 +42,7 @@ function CardProducts() {
       {
         id: 3,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -51,7 +52,7 @@ function CardProducts() {
       {
         id: 4,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -61,7 +62,7 @@ function CardProducts() {
       {
         id: 5,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -71,7 +72,7 @@ function CardProducts() {
       {
         id: 6,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -81,7 +82,7 @@ function CardProducts() {
       {
         id: 7,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -91,7 +92,7 @@ function CardProducts() {
       {
         id: 8,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -101,7 +102,7 @@ function CardProducts() {
       {
         id: 9,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -111,7 +112,7 @@ function CardProducts() {
       {
         id: 10,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao:
           "Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum...",
         precoAnterior: 100,
@@ -122,7 +123,7 @@ function CardProducts() {
       {
         id: 11,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -132,7 +133,7 @@ function CardProducts() {
       {
         id: 12,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -142,7 +143,7 @@ function CardProducts() {
       {
         id: 13,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -152,7 +153,7 @@ function CardProducts() {
       {
         id: 14,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -162,7 +163,7 @@ function CardProducts() {
       {
         id: 15,
         estado: "Novo",
-        img: "/img/cards/img.png",
+        img: "/img/cards/img.webp",
         descricao: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         precoAnterior: 100,
         precoAtual: 79.9,
@@ -208,18 +209,50 @@ function CardProducts() {
     setCurrentSlide(index);
   };
 
-  const handleAddToCart = (produto: Produto) => {
-    addToCart(produto);
-    toast.success("Produto adicionado ao carrinho!");
+  const handleAddToCart = async (produto: Produto) => {
+    try {
+      const sucesso = await salvarProdutoNoServidor(produto);
+
+      if (sucesso) {
+        setTimeout(() => {
+          addToCart(produto); // Atualiza o estado do carrinho
+       
+          toast.success("Produto adicionado ao carrinho com sucesso!", {
+                style: {
+                  fontSize: "14px",
+                  maxWidth: "400px", 
+                  whiteSpace: "nowrap", 
+                  overflow: "hidden",
+                  textOverflow: "ellipsis", 
+                },
+              });
+        }, 1000); // tempo de 1.5 segundos
+      } else {
+        toast.error("Erro ao salvar o produto no servidor.");
+      }
+    } catch (error) {
+      console.error("Erro ao conectar com o servidor JSON:", error);
+      toast.error("Erro ao conectar com o servidor JSON.");
+    }
+  };
+
+  const handleVerMaisClick = () => {
+    toast("Funcionalidade em desenvolvimento.", {
+      icon: "🚧",
+    });
   };
 
   return (
-    <section className="container_cards">
-     
-
+    <section
+      className="container_cards"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className="cards_title_area">
         <h2>Lançamentos</h2>
-        <span>Ver mais</span>
+        <span style={{ cursor: "pointer" }} onClick={handleVerMaisClick}>
+          Ver mais
+        </span>
       </div>
 
       <div className="scroll-buttons">

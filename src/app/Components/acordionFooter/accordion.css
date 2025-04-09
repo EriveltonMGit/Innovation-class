@@ -1,0 +1,66 @@
+
+
+
+
+/* ==============  MEDIA SCREEN ============== */
+
+/* 📱 Celulares pequenos (modo retrato) */
+
+@media (max-width:390px) {
+   
+    .accordion-content-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        opacity: 0;
+      }
+      
+      .accordion-content-wrapper.open {
+        max-height: 500px; /* ajuste conforme o conteúdo máximo esperado */
+        opacity: 1;
+      }
+      .content_links_mobile {
+        display: block;
+      
+        width: 358px;
+      }
+      
+      .accordion {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        span{
+          color: #005CFF;
+        }
+      }
+      
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .accordion-header h4 {
+        margin: 0;
+        font-size: 16px;
+      }
+      
+      .accordion-icon {
+        font-size: 16px;
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-content {
+        padding-top: 10px;
+      }
+      
+      .accordion-content a,
+      .accordion-content p,
+      .accordion-content h4 {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333;
+      }
+  }
