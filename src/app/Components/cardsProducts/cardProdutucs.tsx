@@ -5,13 +5,14 @@ import "./cardProdutucs.css";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useCartStore } from "../../zustand/cartStore";
 import toast from "react-hot-toast";
-import { Produto } from '../../types/produto'; 
+import { Produto } from "../../types/produto";
 
 function CardProducts() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [totalSlides, setTotalSlides] = useState(0);
   const addToCart = useCartStore((state) => state.addToCart);
+
   const CARD_WIDTH = 438;
   const GAP = 17;
   const CARDS_PER_VIEW = 3;
@@ -213,14 +214,23 @@ function CardProducts() {
     toast.success("Produto adicionado ao carrinho!");
   };
 
-  return (
-    <section className="container_cards" data-aos="fade-up"
-    data-aos-duration="2000">
-     
+  const handleVerMaisClick = () => {
+    toast("Funcionalidade em desenvolvimento.", {
+      icon: "🚧",
+    });
+  };
 
+  return (
+    <section
+      className="container_cards"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className="cards_title_area">
         <h2>Lançamentos</h2>
-        <span>Ver mais</span>
+        <span style={{ cursor: "pointer" }} onClick={handleVerMaisClick}>
+          Ver mais
+        </span>
       </div>
 
       <div className="scroll-buttons">

@@ -35,7 +35,9 @@ const CustomCarousel: React.FC = () => {
             </div>
             <div className="container_text_sale_carousel">
               <div>
-                <h1 className="titulo-box">SUPERSALE</h1>
+              <h1 className="titulo-box">
+                  SUPER<span className="sale-font">SALE</span>
+                </h1>
                 <h3>ITENS SELECIONADOS COM ATÉ</h3>
                 <h2>50%OFF</h2>
               </div>
@@ -49,7 +51,9 @@ const CustomCarousel: React.FC = () => {
             </div>
             <div className="container_text_sale_carousel">
               <div>
-                <h1 className="titulo-box">SUPERSALE</h1>
+              <h1 className="titulo-box">
+                  SUPER<span className="sale-font">SALE</span>
+                </h1>
                 <h3>ITENS SELECIONADOS COM ATÉ</h3>
                 <h2>50%OFF</h2>
               </div>
@@ -63,7 +67,9 @@ const CustomCarousel: React.FC = () => {
             </div>
             <div className="container_text_sale_carousel">
               <div>
-                <h1 className="titulo-box">SUPERSALE</h1>
+              <h1 className="titulo-box">
+                  SUPER<span className="sale-font">SALE</span>
+                </h1>
                 <h3>ITENS SELECIONADOS COM ATÉ</h3>
                 <h2>50%OFF</h2>
               </div>
@@ -77,7 +83,9 @@ const CustomCarousel: React.FC = () => {
             </div>
             <div className="container_text_sale_carousel">
               <div>
-                <h1 className="titulo-box">SUPERSALE</h1>
+                <h1 className="titulo-box">
+                  SUPER<span className="sale-font">SALE</span>
+                </h1>
                 <h3>ITENS SELECIONADOS COM ATÉ</h3>
                 <h2>50%OFF</h2>
               </div>

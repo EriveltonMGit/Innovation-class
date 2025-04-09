@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useState } from "react";
-import { Accordion } from "./Accordion";
+import { Accordion } from "../../Components/acordionFooter/accordion";
 import "./footer.css";
 
 function Footer() {

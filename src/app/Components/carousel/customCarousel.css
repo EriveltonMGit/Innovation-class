@@ -50,14 +50,25 @@
 
     gap: 12px;
   }
-  h1 {
+    .titulo-box  {
     font-weight: 700;
     font-family: var(--font-nunito-sans), sans-serif;
     font-size: 70px;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--color-text-bolder);
+   
   }
+  .sale-font{
+    font-family: var(--font-nunito-sans), sans-serif;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-text-bolder);
+    font-weight: 100;
+ 
+  }
+
   h3 {
     font-weight: 700;
     font-family: var(--font-nunito-sans), sans-serif;
@@ -103,6 +114,29 @@
   padding: 15px;
   cursor: pointer;
   font-size: 22px;
+}
+
+
+/* Estilizando os dots do Carousel */
+.carousel-container .slick-dots {
+  bottom: 30px; /* ajuste a posição vertical conforme necessário */
+}
+
+.carousel-container .slick-dots li {
+  margin: 0 4px;
+}
+
+.carousel-container .slick-dots li button {
+  
+
+  background: var( --color-text) ;
+  opacity: 1;
+  border: none;
+}
+
+.carousel-container .slick-dots li.slick-active button {
+  opacity: 1;
+  background:  var(  --bg-sale);
 }
 
 /* ==============  MEDIA SCREEN ============== */
@@ -193,6 +227,9 @@
         word-break: break-word;
         line-height: 1;
         margin-right: 30px;
+
+
+        
       }
       h1 {
         font-weight: 700;
@@ -326,13 +363,23 @@
 
         gap: 12px;
       }
-      h1 {
+      .titulo-box  {
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 100px;
+        font-size: 70px;
         line-height: 100%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
+       
+      }
+      .sale-font{
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 70px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+        font-weight: 100;
+     
       }
       h3 {
         font-weight: 700;
