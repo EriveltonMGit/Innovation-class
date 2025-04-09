@@ -102,15 +102,137 @@
 }
 /* ==============  MEDIA SCREEN ============== */
 
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px) {
+  /* container_areaa_register */
+  .container_areaa_register {
+    background-color: var(--colorbg-white);
+    position: absolute;
+    top: 5069px;
+    left: 371.5px;
+    width: 1260px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      width: 1260px;
+      h1 {
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+
+        height: 27px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+      }
+      span {
+        color: var(--bg-sale);
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+
+        height: 27px;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+    }
+    main {
+      width: 1260px;
+      height: 176px;
+      border-radius: 8px;
+      background-color: var(--bg-color-register);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        width: 1031px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      input {
+        width: 280px;
+        height: 48px;
+        border-radius: 8px;
+      }
+      .checkbox_area {
+        width: 278px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        #check {
+          width: 16px;
+        }
+        p {
+          width: 264px;
+          height: 16px;
+          font-weight: 700;
+          font-size: 11px;
+          text-decoration: underline;
+          font-family: var(--font-nunito-sans), sans-serif;
+          margin-bottom: 0;
+        }
+      }
+      button {
+        background-color: var(--bg-sale);
+        color: var(--colorbg-white);
+        width: 121px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 8px;
+        padding: 14px 24px;
+        cursor: pointer;
+        transition: 0.5s all;
+      }
+      button:hover {
+        background-color: var(--color-text-sub-menu);
+        color: var(--color-text-white);
+      }
+    }
+  }
+}
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
 /* 📱 Celulares pequenos (modo retrato) */
-@media (max-width: 320px) {
+
+
+@media (max-width: 480px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_areaa_register */
   .container_areaa_register {
     background-color: var(--colorbg-white);
     position: absolute;
     top: 3929px;
-    width: 358px;
+    width: 480px;
     height: 330px;
     display: flex;
     align-items: center;
@@ -342,14 +464,14 @@
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_areaa_register */
   .container_areaa_register {
     background-color: var(--colorbg-white);
     position: absolute;
     top: 3929px;
-    width: 358px;
+    width: 320px;
     height: 330px;
     display: flex;
     align-items: center;
@@ -391,7 +513,7 @@
       }
     }
     main {
-      width: 358px;
+      width: 320px;
       height: 284px;
       border-radius: 8px;
       background-color: var(--bg-color-register);
@@ -399,7 +521,21 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      /* area_input_register */
+      .area_input_register {
+        width: 300px;
+        padding: 0;
 
+        input {
+          width: 280px;
+          height: 48px;
+          border-radius: 8px;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+         
+        }
+      }
       div {
         width: 326px;
         height: 208px;
@@ -407,12 +543,9 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+       
       }
-      input {
-        width: 278px;
-        height: 48px;
-        border-radius: 8px;
-      }
+    
       .checkbox_area {
         width: 329px;
         height: 16px;
@@ -438,130 +571,7 @@
       button {
         background-color: var(--bg-sale);
         color: var(--colorbg-white);
-        width: 326px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        border-radius: 8px;
-        padding: 14px 24px;
-        cursor: pointer;
-        transition: 0.5s all;
-      }
-      button:hover {
-        background-color: var(--color-text-sub-menu);
-        color: var(--color-text-white);
-      }
-    }
-  }
-}
-
-/* 📱 Celulares médios/grandes (modo retrato) */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
-}
-
-/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
-}
-
-/* 💻 Laptops e desktops menores (modo paisagem) */
-@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
-}
-
-/* 🖥️ Telas grandes (HD ou superiores) */
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
-  /* Ex: monitores full HD padrão */
-}
-
-/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px) {
-  /* container_areaa_register */
-  .container_areaa_register {
-    background-color: var(--colorbg-white);
-    position: absolute;
-    top: 5069px;
-    left: 371.5px;
-    width: 1260px;
-    height: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1px;
-      width: 1260px;
-      h1 {
-        font-family: var(--font-nunito-sans), sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-
-        height: 27px;
-        line-height: 100%;
-        letter-spacing: 0px;
-        margin-bottom: 0;
-      }
-      span {
-        color: var(--bg-sale);
-        font-family: var(--font-nunito-sans), sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-
-        height: 27px;
-        line-height: 100%;
-        letter-spacing: 0px;
-      }
-    }
-    main {
-      width: 1260px;
-      height: 176px;
-      border-radius: 8px;
-      background-color: var(--bg-color-register);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      div {
-        width: 1031px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-      }
-      input {
         width: 280px;
-        height: 48px;
-        border-radius: 8px;
-      }
-      .checkbox_area {
-        width: 278px;
-        height: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        #check {
-          width: 16px;
-        }
-        p {
-          width: 264px;
-          height: 16px;
-          font-weight: 700;
-          font-size: 11px;
-          text-decoration: underline;
-          font-family: var(--font-nunito-sans), sans-serif;
-          margin-bottom: 0;
-        }
-      }
-      button {
-        background-color: var(--bg-sale);
-        color: var(--colorbg-white);
-        width: 121px;
         height: 48px;
         display: flex;
         align-items: center;

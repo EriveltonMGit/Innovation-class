@@ -89,8 +89,120 @@
 }
 /* ==============  MEDIA SCREEN ============== */
 
+
+/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
+@media screen and (min-width: 1920px) {
+  /* two_banner_container_' */
+  .two_banner_container_ {
+    width: 100%;
+    height: 819px;
+    background-color: var(--bg-color-banner);
+    position: absolute;
+    top: 2130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1177px;
+      height: 728.14px;
+
+      .content_banner_two {
+        width: 652px;
+        height: 728.14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        main {
+          width: 476px;
+          height: 567px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+
+          h1 {
+            width: 481px;
+            height: 42px;
+            font-family: var(--font-nunito-sans), sans-serif;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: 4%;
+            text-transform: uppercase;
+            color: var(--color-text-bolder);
+            font-size: 30px;
+            text-align: center;
+          }
+
+          div {
+            width: 470px;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+              height: 90px;
+              width: 90px;
+            }
+
+            p {
+              font-family: var(--font-nunito-sans), sans-serif;
+              width: 360px;
+              height: 125px;
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 140%;
+              letter-spacing: 5%;
+              font-size: 16px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      div:nth-child(2) {
+        width: 652px;
+        height: 728.14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 652px;
+          height: 728.14px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
 /* 📱 Celulares pequenos (modo retrato) */
-@media (max-width: 320px) {
+
+@media (max-width: 480px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* two_banner_container_' */
   .two_banner_container_ {
@@ -160,9 +272,9 @@
               display: flex;
               align-items: center;
               font-weight: 400;
-              font-size: 12px;
               line-height: 140%;
               letter-spacing: 5%;
+              font-size: 12px;
               margin-bottom: 0;
             }
           }
@@ -280,12 +392,12 @@
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* two_banner_container_' */
   .two_banner_container_ {
-    width: 391px;
-    height: 717px;
+    width: 320px;
+    height: 617px;
     background-color: var(--bg-color-banner);
     position: absolute;
     top: 1863px;
@@ -299,18 +411,19 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: column-reverse;
-      width: 384px;
+      width: 320px;
       height: 661px;
 
       .content_banner_two {
-        width: 350px;
+        width: 320px;
         height: 349px;
+      
         display: flex;
         align-items: center;
         justify-content: flex-start;
 
         main {
-          width: 349px;
+          width: 320px;
           height: 349px;
           display: flex;
           align-items: center;
@@ -318,7 +431,7 @@
           flex-direction: column;
 
           h1 {
-            width: 384px;
+            width: 320px;
             height: 28px;
             font-family: var(--font-nunito-sans), sans-serif;
             font-weight: 700;
@@ -332,27 +445,27 @@
           }
 
           div {
-            width: 350px;
+            width: 300px;
             height: 125px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             img {
-              height: 60px;
-              width: 60px;
+              height: 40px;
+              width: 40px;
             }
 
             p {
               font-family: var(--font-nunito-sans), sans-serif;
-              width: 276px;
+              width: 246px;
               height: 68px;
               display: flex;
               align-items: center;
               font-weight: 400;
+              font-size: 11px;
               line-height: 140%;
               letter-spacing: 5%;
-              font-size: 12px;
               margin-bottom: 0;
             }
           }
@@ -367,121 +480,8 @@
         overflow: hidden;
         position: relative;
         img {
-          width: 349px;
-          height: 349px;
-        }
-      }
-    }
-  }
-}
-
-/* 📱 Celulares médios/grandes (modo retrato) */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
-}
-
-/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
-}
-
-/* 💻 Laptops e desktops menores (modo paisagem) */
-@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
-}
-
-/* 🖥️ Telas grandes (HD ou superiores) */
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
-  /* Ex: monitores full HD padrão */
-}
-
-/* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
-@media screen and (min-width: 1920px) {
-  /* two_banner_container_' */
-  .two_banner_container_ {
-    width: 100%;
-    height: 819px;
-    background-color: var(--bg-color-banner);
-    position: absolute;
-    top: 2130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    main {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 1177px;
-      height: 728.14px;
-
-      .content_banner_two {
-        width: 652px;
-        height: 728.14px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-
-        main {
-          width: 476px;
-          height: 567px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-direction: column;
-
-          h1 {
-            width: 481px;
-            height: 42px;
-            font-family: var(--font-nunito-sans), sans-serif;
-            font-weight: 700;
-            line-height: 140%;
-            letter-spacing: 4%;
-            text-transform: uppercase;
-            color: var(--color-text-bolder);
-            font-size: 30px;
-            text-align: center;
-          }
-
-          div {
-            width: 470px;
-            height: 125px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            img {
-              height: 90px;
-              width: 90px;
-            }
-
-            p {
-              font-family: var(--font-nunito-sans), sans-serif;
-              width: 360px;
-              height: 125px;
-              display: flex;
-              align-items: center;
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 140%;
-              letter-spacing: 5%;
-              font-size: 16px;
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-      div:nth-child(2) {
-        width: 652px;
-        height: 728.14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-        img {
-          width: 652px;
-          height: 728.14px;
-          object-fit: cover;
+          width: 320px;
+          height: 320px;
         }
       }
     }

@@ -5,8 +5,83 @@
 /* ==============  MEDIA SCREEN ============== */
 
 /* 📱 Celulares pequenos (modo retrato) */
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
 
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
 @media (max-width:390px) {
+   
+    .accordion-content-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        opacity: 0;
+      }
+      
+      .accordion-content-wrapper.open {
+        max-height: 500px; /* ajuste conforme o conteúdo máximo esperado */
+        opacity: 1;
+      }
+      .content_links_mobile {
+        display: block;
+      
+        width: 358px;
+      }
+      
+      .accordion {
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        span{
+          color: #005CFF;
+        }
+      }
+      
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .accordion-header h4 {
+        margin: 0;
+        font-size: 16px;
+      }
+      
+      .accordion-icon {
+        font-size: 16px;
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-content {
+        padding-top: 10px;
+      }
+      
+      .accordion-content a,
+      .accordion-content p,
+      .accordion-content h4 {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333;
+      }
+  }
+
+  @media (max-width:480px) {
    
     .accordion-content-wrapper {
         max-height: 0;

@@ -141,175 +141,6 @@
 
 /* ==============  MEDIA SCREEN ============== */
 
-/* 📱 Celulares pequenos (modo retrato) */
-
-@media (max-width: 390px) {
-  /* Ex: iPhone SE, Galaxy S5 */
-  .carousel-container {
-    position: relative;
-    max-width: 390px;
-    height: 306px;
-    margin: 0 auto;
-  }
-
-  .carousel-slide {
-    max-width: 390px;
-    height: 306px;
-    color: #000000;
-    background: var(--bk-color-carousel);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .slide_one {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 390px;
-    height: 306px;
-  }
-  /*  */
-  .slide_one {
-    width: 390px;
-    height: 306px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    /* ;container_img_carousel */
-    .container_img_carousel {
-      position: absolute;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-
-      top: 0;
-      width: 390px;
-      height: 306px;
-      img {
-        left: -98px;
-        position: absolute;
-      }
-    }
-    /* container_text_sale_carousel */
-    .container_text_sale_carousel {
-      height: 164px;
-      width: 139px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      position: absolute;
-      top: 0;
-      margin-left: 216px;
-      z-index: 20;
-      margin-top: 71px;
-
-      div {
-        width: 139px;
-        height: 164px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        overflow-wrap: break-word;
-        word-break: break-word;
-      }
-
-      .titulo-box {
-        text-align: center;
-        word-break: break-word;
-        overflow-wrap: break-word;
-        word-spacing: 0.3rem;
-        white-space: normal;
-        overflow-wrap: break-word;
-        word-break: break-word;
-        line-height: 1;
-        margin-right: 30px;
-
-
-        
-      }
-      h1 {
-        font-weight: 700;
-        font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 32px;
-        line-height: 40%;
-        letter-spacing: 0%;
-        color: var(--color-text-bolder);
-      }
-      h3 {
-        font-weight: 700;
-        font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 12px;
-        line-height: 100%;
-        letter-spacing: 30%;
-        color: var(--bg-sale);
-        word-spacing: 10px;
-      }
-      h2 {
-        width: 580px;
-        height: 34px;
-        font-weight: 700;
-        font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: 30%;
-        color: var(--bg-sale);
-      }
-    }
-  }
-
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-
-  .prev-button {
-    left: 10px;
-    margin-left: 0px;
-    background-color: var(--colorbg-white);
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 22px;
-  }
-  
-  .next-button {
-    right: 10px;
-    margin-right: 0px;
-    background-color: var(--colorbg-white);
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 22px;
-  }
-}
-
-
-/* 📱 Celulares médios/grandes (modo retrato) */
-@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
-  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
-}
-
-/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
-@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
-}
-
-/* 💻 Laptops e desktops menores (modo paisagem) */
-@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
-  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
-}
-
-/* 🖥️ Telas grandes (HD ou superiores) */
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
-  /* Ex: monitores full HD padrão */
-}
-
 /* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
 @media screen and (min-width: 1920px) {
   .carousel-container {
@@ -424,5 +255,470 @@
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
+  }
+}
+/* 🖥️ Telas grandes (HD ou superiores) */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  /* Ex: monitores full HD padrão */
+}
+
+/* 💻 Laptops e desktops menores (modo paisagem) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+}
+/* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+}
+/* 📱 Celulares médios/grandes (modo retrato) */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+  /* Ex: iPhone 12, Galaxy S21, dispositivos intermediários */
+}
+/* 📱 Celulares pequenos (modo retrato) */
+@media (max-width: 480px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  .carousel-container {
+    position: relative;
+    max-width: 480px;
+    height: 306px;
+    margin: 0 auto;
+  }
+
+  .carousel-slide {
+    max-width: 480px;
+    height: 306px;
+    color: #000000;
+    background: var(--bk-color-carousel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide_one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 306px;
+  }
+  /*  */
+  .slide_one {
+    width: 480px;
+    height: 306px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* ;container_img_carousel */
+    .container_img_carousel {
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      top: 0;
+      width: 480px;
+      height: 306px;
+      img {
+        left: -98px;
+        position: absolute;
+      }
+    }
+    /* container_text_sale_carousel */
+    .container_text_sale_carousel {
+      height: 164px;
+      width: 139px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: 0;
+      margin-left: 216px;
+      z-index: 20;
+      margin-top: 71px;
+
+      div {
+        width: 139px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .titulo-box {
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        word-spacing: 0.3rem;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1;
+        margin-right: 30px;
+
+
+        
+      }
+      h1 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 40%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+      }
+      h3 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+        word-spacing: 10px;
+      }
+      h2 {
+        width: 580px;
+        height: 34px;
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+      }
+    }
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .prev-button {
+    left: 10px;
+    margin-left: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .next-button {
+    right: 10px;
+    margin-right: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+}
+@media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  .carousel-container {
+    position: relative;
+    max-width: 390px;
+    height: 306px;
+    margin: 0 auto;
+  }
+
+  .carousel-slide {
+    max-width: 390px;
+    height: 306px;
+    color: #000000;
+    background: var(--bk-color-carousel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide_one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 306px;
+  }
+  /*  */
+  .slide_one {
+    width: 390px;
+    height: 306px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* ;container_img_carousel */
+    .container_img_carousel {
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      top: 0;
+      width: 390px;
+      height: 306px;
+      img {
+        left: -98px;
+        position: absolute;
+      }
+    }
+    /* container_text_sale_carousel */
+    .container_text_sale_carousel {
+      height: 164px;
+      width: 139px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: 0;
+      margin-left: 216px;
+      z-index: 20;
+      margin-top: 71px;
+
+      div {
+        width: 139px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .titulo-box {
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        word-spacing: 0.3rem;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1;
+        margin-right: 30px;
+
+          
+        
+      }
+      .titulo-box {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 40%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+
+        .sale-font{
+          font-weight: 100;
+          font-family: var(--font-nunito-sans), sans-serif;
+          font-size: 32px;
+          line-height: 40%;
+          letter-spacing: 0%;
+          color: var(--color-text-bolder);
+        }
+      }
+      h3 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+        word-spacing: 10px;
+      }
+      h2 {
+        width: 580px;
+        height: 34px;
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+      }
+    }
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .prev-button {
+    left: 10px;
+    margin-left: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .next-button {
+    right: 10px;
+    margin-right: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+}
+@media (max-width: 320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  .carousel-container {
+    position: relative;
+    width: 320px;
+    height: 306px;
+    margin: 0 auto;
+  }
+
+  .carousel-slide {
+    
+    width: 320px;
+    height: 306px;
+    color: #000000;
+    background: var(--bk-color-carousel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide_one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 306px;
+    
+  }
+  /*  */
+  .slide_one {
+    width: 320px;
+    height: 306px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* ;container_img_carousel */
+    .container_img_carousel {
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      top: 0;
+      width: 320px;
+      height: 306px;
+      img {
+        left: -78px;
+        position: absolute;
+      }
+    }
+    /* container_text_sale_carousel */
+    .container_text_sale_carousel {
+      height: 194px;
+      width: 139px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: absolute;
+      top: 0;
+      margin-left: 136px;
+      z-index: 20;
+      margin-top: 51px;
+      background-color: #0000001f;
+      border-radius: 8px;
+      div {
+        width: 139px;
+        height: 164px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .titulo-box {
+        text-align: center;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        word-spacing: 0.3rem;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1;
+        margin-right: 30px;
+
+
+        
+      }
+      h1 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 40%;
+        letter-spacing: 0%;
+        color: var(--color-text-bolder);
+      }
+      h3 {
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+        word-spacing: 10px;
+      }
+      h2 {
+        width: 580px;
+        height: 34px;
+        font-weight: 700;
+        font-family: var(--font-nunito-sans), sans-serif;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        color: var(--bg-sale);
+      }
+    }
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .prev-button {
+    left: 10px;
+    margin-left: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .next-button {
+    right: 10px;
+    margin-right: 0px;
+    background-color: var(--colorbg-white);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
   }
 }
