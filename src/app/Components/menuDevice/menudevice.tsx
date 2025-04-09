@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -48,10 +49,26 @@ export default function MenuDevice({ onClose }: MenuDeviceProps) {
         
         <div className="menu-content">
           {/* Conteúdo do menu */}
+          <img src="/img/icons/Grupo-21089.webp" alt="" />
           <ul>
-            <li>Menu Item 1</li>
-            <li>Menu Item 2</li>
-            <li>Menu Item 3</li>
+            <div>
+            <h3>Departamaneto</h3>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+          
+            </div>
+            <div>
+            <h3>Departamaneto</h3>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            <li>Categorias</li>
+            
+            </div>
           </ul>
         </div>
       </div>

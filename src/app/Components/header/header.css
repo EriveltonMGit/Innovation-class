@@ -283,14 +283,14 @@
       margin-bottom: 16px;
       margin-top: 27.36px;
       input {
-        width: 579px;
+        width: 361px;
+      height: 40px;
       }
     }
     
     .search-message {
-      width: 100%; /* ou uma largura máxima */
-      max-width: 579px;
-      margin-top: 8px;
+      width: 361px; /* ou uma largura máxima */
+      max-width: 361px;
       font-size: 14px;
       color: var(--color-text);
       background-color: var(--colorbg-white);
@@ -302,7 +302,7 @@
 
       position: relative;
       position: absolute;
-      margin-top: 78px;
+      margin-top: 110px;
 
       word-wrap: break-word;
       white-space: normal;

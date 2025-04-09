@@ -139,16 +139,28 @@
 /* 📱📲 Celulares grandes e tablets pequenos (modo retrato) */
 @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
   /* Ex: tablets em pé, celulares grandes como iPhone Pro Max */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 💻 Laptops e desktops menores (modo paisagem) */
 @media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
   /* Ex: notebooks comuns (13" até 15"), tablets em modo paisagem */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 🖥️ Telas grandes (HD ou superiores) */
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
   /* Ex: monitores full HD padrão */
+    /* btn_hamburguer */
+.btn_hamburguer{
+  display: none;
+}
 }
 
 /* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */

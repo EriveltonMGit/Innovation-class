@@ -100,7 +100,7 @@ function Header({ onToggleMenu }: HeaderProps) {
                       position: "absolute",
                       top: "-8px",
                       right: "-10px",
-                      background: "red",
+                      background: "var( --bg-sale)",
                       color: "white",
                       borderRadius: "50%",
                       padding: "2px 6px",
