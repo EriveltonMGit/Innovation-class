@@ -11,6 +11,8 @@ type CartProps = {
   onClose: () => void;
 };
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 export default function Cart({ onClose }: CartProps) {
   const cartItems = useCartStore((state) => state.cartItems);
   const setCartItems = useCartStore((state) => state.setCartItems);
@@ -18,7 +20,7 @@ export default function Cart({ onClose }: CartProps) {
 
   // Buscar produtos ao abrir o carrinho
   useEffect(() => {
-    fetch("http://localhost:3001/produtos")
+    fetch(`${API_URL}/produtos`)
       .then((res) => res.json())
       .then((data: Produto[]) => {
         setCartItems(data);
@@ -52,23 +54,17 @@ export default function Cart({ onClose }: CartProps) {
 
   const handleRemove = async (id: number) => {
     try {
-      const response = await fetch(`http://localhost:3001/produtos/${id}`, {
+      const response = await fetch(`${API_URL}/produtos/${id}`, {
         method: "DELETE",
       });
-      toast.error("🛠️ Produto removido com sucesso!", {
-        style: {
-          fontSize: "14px",
-          maxWidth: "400px",
-          whiteSpace: "nowrap",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
-        },
-      });
+
+      toast.error("🛠️ Produto removido com sucesso!");
+
       if (!response.ok) {
         throw new Error("Erro na resposta da API");
       }
 
-      const updatedResponse = await fetch("http://localhost:3001/produtos");
+      const updatedResponse = await fetch(`${API_URL}/produtos`);
       const updatedItems: Produto[] = await updatedResponse.json();
       setCartItems(updatedItems);
     } catch (error) {
