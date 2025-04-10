@@ -272,16 +272,21 @@
   /* Ex: iPhone SE, Galaxy S5 */
   .carousel-container {
     position: relative;
-    
-    max-width: 450px;
+    width: 400px;
     height: 306px;
     margin: 0 auto;
     
   }
+  .container_carousel{
+    width: 400px;
+    position: relative;
+    width: 400px;
+    height: 306px;
+    margin: 0 auto;
+  }
 
   .carousel-slide {
-   
-    max-width: 450px;
+    width: 400px;
     height: 306px;
     color: #000000;
     background: var(--bk-color-carousel);
@@ -294,14 +299,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    max-width: 450px;
+    width: 400px;
     height: 306px;
   }
   /*  */
   .slide_one {
-  
-    max-width: 450px;
+    width: 400px;
     height: 306px;
     text-align: center;
     display: flex;
@@ -316,8 +319,7 @@
       justify-content: flex-end;
 
       top: 0;
-      width: 100%;
-      max-width: 450px;
+      width: 400px;
       height: 306px;
       img {
         left: -98px;
@@ -333,7 +335,7 @@
       justify-content: flex-start;
       position: absolute;
       top: 0;
-      margin-left: 220px;
+      margin-left: 156px;
       z-index: 20;
       margin-top: 71px;
       div {
@@ -392,7 +394,7 @@
         word-spacing: 10px;
       }
       h2 {
-        width: 580px;
+        width: 400px;
         height: 34px;
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
@@ -412,7 +414,7 @@
   }
 
   .prev-button {
-    left: 35px;
+    left: 10px;
     margin-left: 0px;
     background-color: var(--colorbg-white);
     border-radius: 50%;
@@ -422,7 +424,7 @@
   }
 
   .next-button {
-    right: 35px;
+    right: 10px;
     margin-right: 0px;
     background-color: var(--colorbg-white);
     border-radius: 50%;
