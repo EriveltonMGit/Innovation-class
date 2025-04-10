@@ -19,6 +19,16 @@
       "precoAtual": 79.9,
       "qtdVezes": "10x de R$ 7,90",
       "desconto": "10% OFF"
+    },
+    {
+      "id": "ae14360f-74d6-4a2e-b73c-4899cce3e38a",
+      "estado": "Novo",
+      "img": "/img/cards/img.webp",
+      "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "precoAnterior": 100,
+      "precoAtual": 79.9,
+      "qtdVezes": "Ou em até 10x de R$ 7,90",
+      "desconto": "10% OFF"
     }
   ]
 }
