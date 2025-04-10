@@ -8,7 +8,6 @@
 
 /* ==============  MEDIA SCREEN ============== */
 
-
 /* 🖥️🖥️ Telas ultra-largas (Full HD+ e 4K) */
 @media screen and (min-width: 1920px) {
   /* container_carousel */
@@ -41,33 +40,33 @@
 @media (max-width: 480px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_carousel */
-.container_carousel {
-  width:  480px;
+  .container_carousel {
+    width: 100%;
+    max-width: 430px;
     height: 306px;
-  display: flex;
-  align-items: center;
-
-}
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width: 390px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_carousel */
-.container_carousel {
-  width: 390px;
+  .container_carousel {
+    width: 100%;
+    max-width: 390px;
     height: 306px;
-  display: flex;
-  align-items: center;
-
-}
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width: 320px) {
   /* Ex: iPhone SE, Galaxy S5 */
   /* container_carousel */
-.container_carousel {
-  width: 320px;
+  .container_carousel {
+    width: 100%;
+    max-width: 320px;
     height: 306px;
-  display: flex;
-  align-items: center;
-
-}
+    display: flex;
+    align-items: center;
+  }
 }

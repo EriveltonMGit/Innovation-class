@@ -232,7 +232,8 @@
     background-color: var(--colorbg-white);
     position: absolute;
     top: 3929px;
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     height: 330px;
     display: flex;
     align-items: center;
