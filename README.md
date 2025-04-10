@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Innovation Class - Plataforma de Gestão Educacional
 
-## Getting Started
+## 🔍 Visão Geral
+O Innovation Class é uma plataforma educacional full-stack que combina:
+- Frontend moderno com Next.js (hospedado no Netlify)
+- Backend eficiente com JSON Server (hospedado no Render)
 
-First, run the development server:
+### 🔗 Links Úteis
+- 🌐 [Aplicação Live](https://innovation-class.netlify.app/)
+- ⚙️ [API Backend](https://backend-inovation-class.onrender.com/produtos)
+- 💻 [Repositório GitHub](https://github.com/seu-usuario/innovation-class)
+
+## 🛠 Stack Tecnológica
+
+### Frontend (Netlify)
+| Tecnologia       | Versão  | Finalidade                  |
+|------------------|---------|-----------------------------|
+| Next.js          | 15.2.4  | Framework React SSR         |
+| React            | 18.2.0  | Biblioteca UI               |
+| Ant Design       | 5.24.6  | Componentes UI              |
+| Zustand          | 5.0.3   | Gerenciamento de estado     |
+| AOS              | 2.3.4   | Animações                   |
+
+### Backend (Render)
+| Tecnologia       | Versão  | Finalidade                  |
+|------------------|---------|-----------------------------|
+| JSON Server      | 0.17.4  | API REST simulada           |
+
+
+📸 Screenshots
+Tela Principal	Dashboard
+![Imagem](https://drive.google.com/uc?export=view&id=1SW70o8RHLgoijIRbOxwqDK7lEmiOBvJF)
+
+<div align="center">
+  <img src="https://drive.google.com/uc?export=view&id=15u_dnEEoBq90maU_3pAYegzUYwPSiO5a" alt="Imagem 1" width="45%" />
+  <img src="https://drive.google.com/uc?export=view&id=1W-zl5puXiD-16xCPSQZTnHICz-afL6Kc" alt="Imagem 2" width="45%" />
+</div>
+
+
+
+
+## 🏁 Começando
 
 ```bash
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/innovation-class.git
+cd innovation-class
+
+# 2. Instale as dependências
+npm install
+
+# 3. Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Frontend (Netlify)
+✅ Hospedagem estática
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Deploy contínuo
 
-## Learn More
+✅ Build automático
 
-To learn more about Next.js, take a look at the following resources:
+Backend (Render)
+🚀 API 24/7
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔄 Escalabilidade automática
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💾 DB via JSON
 
-## Deploy on Vercel
+✨ Funcionalidades
+✅ CRUD completo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📱 Interface responsiva
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🎬 Animações fluidas
+
+⚡ Gerenciamento de estado
+
+💬 Feedback visual
+
+
+Ambiente Backend
+O backend da aplicação pode ser executado de duas formas:
+
+🔧 Localmente: Utilizando o JSON Server para simular uma API REST com persistência de dados em um arquivo db.json local.
+
+☁️ Remotamente: A mesma API está hospedada no Render, disponível 24/7 com escalabilidade automática.
+
+
+
+
+🤝 Contribuição
+Faça um fork do projeto
+
+Crie sua branch (git checkout -b feature/nova-feature)
+
+Commit suas mudanças (git commit -m 'Adiciona nova feature')
+
+Push para a branch (git push origin feature/nova-feature)
+
+Abra um Pull Request
+
+
+
+📩 Contato
+Erivelton Magalhães dos Santos
+
+✉️ erivelton.m.santos@aluno.senai.br
+
