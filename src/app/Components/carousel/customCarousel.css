@@ -273,14 +273,14 @@
   .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     height: 306px;
     margin: 0 auto;
   }
 
   .carousel-slide {
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     height: 306px;
     color: #000000;
     background: var(--bk-color-carousel);
@@ -294,13 +294,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     height: 306px;
   }
   /*  */
   .slide_one {
     width: 100%;
-    max-width: 480px;
+    max-width: 450px;
     height: 306px;
     text-align: center;
     display: flex;
@@ -316,7 +316,7 @@
 
       top: 0;
       width: 100%;
-      max-width: 480px;
+      max-width: 450px;
       height: 306px;
       img {
         left: -98px;
