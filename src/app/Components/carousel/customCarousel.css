@@ -272,14 +272,15 @@
   /* Ex: iPhone SE, Galaxy S5 */
   .carousel-container {
     position: relative;
-    width: 100%;
+    
     max-width: 450px;
     height: 306px;
     margin: 0 auto;
+    
   }
 
   .carousel-slide {
-    width: 100%;
+   
     max-width: 450px;
     height: 306px;
     color: #000000;
@@ -293,13 +294,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    
     max-width: 450px;
     height: 306px;
   }
   /*  */
   .slide_one {
-    width: 100%;
+  
     max-width: 450px;
     height: 306px;
     text-align: center;
@@ -332,7 +333,7 @@
       justify-content: flex-start;
       position: absolute;
       top: 0;
-      margin-left: 216px;
+      margin-left: 220px;
       z-index: 20;
       margin-top: 71px;
       div {
@@ -489,7 +490,7 @@
       justify-content: flex-start;
       position: absolute;
       top: 0;
-      margin-left: 216px;
+      margin-left: 156px;
       z-index: 20;
       margin-top: 71px;
       div {
@@ -646,9 +647,10 @@
       justify-content: flex-start;
       position: absolute;
       top: 0;
-      margin-left: 216px;
+      margin-left: 116px;
       z-index: 20;
       margin-top: 71px;
+     
       div {
         width: 139px;
         height: 184px;
@@ -672,7 +674,7 @@
         word-break: break-word;
         line-height: 100%;
         margin-right: 30px;
-      
+        
       }
       .titulo-box {
         font-weight: 700;
@@ -681,7 +683,7 @@
         line-height: 40%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
- 
+       
         .sale-font {
           font-weight: 100;
           font-family: var(--font-nunito-sans), sans-serif;
