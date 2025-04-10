@@ -1,4 +1,4 @@
-# 🚀 Innovation Class - Plataforma de Gestão Educacional
+# 🚀 Projeto Avanti - Innovation Class - Plataforma de Gestão Educacional
 
 ## 🔍 Visão Geral
 O Innovation Class é uma plataforma educacional full-stack que combina:
