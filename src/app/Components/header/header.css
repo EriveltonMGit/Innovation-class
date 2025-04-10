@@ -385,8 +385,8 @@
   /* Ex: iPhone SE, Galaxy S5 */
   /* HEADER CONTAINER */
   .container_header {
-    width: 460px;
-
+    width: 100%;
+    max-width: 400px;
     height: 132px;
     background-color: var(--colorbg-white);
     display: flex;
@@ -440,13 +440,14 @@
 
   /* container_area_register_ */
   .container_area_register_ {
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     height: 132px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-
+  
     /* logo_ */
     .logo_ {
       width: 148px;
@@ -595,7 +596,8 @@
   /* Ex: iPhone SE, Galaxy S5 */
   /* HEADER CONTAINER */
   .container_header {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     height: 132px;
     background-color: var(--colorbg-white);
     display: flex;
@@ -649,13 +651,13 @@
 
   /* container_area_register_ */
   .container_area_register_ {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     height: 132px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-
     /* logo_ */
     .logo_ {
       width: 148px;
@@ -668,7 +670,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 361px;
+      width: 100%;
+      max-width: 390px;
       height: 40px;
       top: 47px;
       left: 949px;
@@ -681,7 +684,7 @@
     }
     
     .search-message {
-      width: 361px; /* ou uma largura máxima */
+      width: 100%; 
       max-width: 361px;
       font-size: 14px;
       color: var(--color-text);
@@ -760,7 +763,8 @@
 
   /* container_area_category */
   .container_area_category {
-    width:390px;
+    width: 100%;
+    max-width: 390px;
     height: 74px;
     display: flex;
     align-items: center;
@@ -804,7 +808,8 @@
   /* Ex: iPhone SE, Galaxy S5 */
   /* HEADER CONTAINER */
   .container_header {
-    width: 300px;
+    width: 100%;
+      max-width: 300px;
     height: 132px;
     background-color: var(--colorbg-white);
     display: flex;
@@ -816,7 +821,8 @@
   }
   /* sale_ */
   .sale_ {
-    width: 320px;
+    width: 100%;
+      max-width: 300px;
     height: 52px;
     background-color: var(--bg-sale);
     display: flex;
@@ -826,7 +832,8 @@
 
     /* text-sale_ */
     .text-sale_ {
-      width: 320px;
+      width: 100%;
+      max-width: 300px;
       height: 44px;
       left: 22px;
       border-radius: 4px;
@@ -857,7 +864,8 @@
 
   /* container_area_register_ */
   .container_area_register_ {
-    width: 320px;
+    width: 100%;
+    max-width: 300px;
     height: 132px;
     display: flex;
     align-items: center;
@@ -889,7 +897,8 @@
     }
     
     .search-message {
-      width: 320px;
+      width: 100%;
+      max-width: 320px;
       max-width: 361px;
       font-size: 14px;
       color: var(--color-text);
@@ -968,7 +977,8 @@
 
   /* container_area_category */
   .container_area_category {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 74px;
     display: flex;
     align-items: center;
