@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "id": "2fce4b8e-0047-43a1-a99c-aa64bc7010ef",
+      "id": "e5bf88d1-bff6-43ec-adc7-9aa046429b54",
       "estado": "Novo",
       "img": "/img/cards/img.webp",
       "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
@@ -11,17 +11,7 @@
       "desconto": "10% OFF"
     },
     {
-      "id": "28fe78d2-184b-43f9-a400-2f5420cf74e4",
-      "estado": "Novo",
-      "img": "/img/cards/img.webp",
-      "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-      "precoAnterior": 100,
-      "precoAtual": 79.9,
-      "qtdVezes": "10x de R$ 7,90",
-      "desconto": "10% OFF"
-    },
-    {
-      "id": "94f8fda1-04a7-463e-bbde-8b94eb780147",
+      "id": "443a1d9f-a308-4d74-9312-02a910f8929a",
       "estado": "Novo",
       "img": "/img/cards/img.webp",
       "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",

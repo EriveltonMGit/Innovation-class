@@ -50,23 +50,21 @@
 
     gap: 12px;
   }
-    .titulo-box  {
+  .titulo-box {
     font-weight: 700;
     font-family: var(--font-nunito-sans), sans-serif;
     font-size: 70px;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--color-text-bolder);
-   
   }
-  .sale-font{
+  .sale-font {
     font-family: var(--font-nunito-sans), sans-serif;
     font-size: 70px;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--color-text-bolder);
     font-weight: 100;
- 
   }
 
   h3 {
@@ -116,7 +114,6 @@
   font-size: 22px;
 }
 
-
 /* Estilizando os dots do Carousel */
 .carousel-container .slick-dots {
   bottom: 30px; /* ajuste a posição vertical conforme necessário */
@@ -127,16 +124,14 @@
 }
 
 .carousel-container .slick-dots li button {
-  
-
-  background: var( --color-text) ;
+  background: var(--color-text);
   opacity: 1;
   border: none;
 }
 
 .carousel-container .slick-dots li.slick-active button {
   opacity: 1;
-  background:  var(  --bg-sale);
+  background: var(--bg-sale);
 }
 
 /* ==============  MEDIA SCREEN ============== */
@@ -194,23 +189,21 @@
 
         gap: 12px;
       }
-      .titulo-box  {
+      .titulo-box {
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
         font-size: 70px;
         line-height: 100%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
-       
       }
-      .sale-font{
+      .sale-font {
         font-family: var(--font-nunito-sans), sans-serif;
         font-size: 70px;
         line-height: 100%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
         font-weight: 100;
-     
       }
       h3 {
         font-weight: 700;
@@ -359,9 +352,6 @@
         word-break: break-word;
         line-height: 1;
         margin-right: 30px;
-
-
-        
       }
       h1 {
         font-weight: 700;
@@ -409,7 +399,7 @@
     cursor: pointer;
     font-size: 22px;
   }
-  
+
   .next-button {
     right: 10px;
     margin-right: 0px;
@@ -482,31 +472,30 @@
       margin-left: 216px;
       z-index: 20;
       margin-top: 71px;
-
       div {
         width: 139px;
-        height: 164px;
+        height: 184px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         overflow-wrap: break-word;
         word-break: break-word;
+                
+        
       }
 
       .titulo-box {
         text-align: center;
         word-break: break-word;
         overflow-wrap: break-word;
-        word-spacing: 0.3rem;
+        height: 204px;
         white-space: normal;
         overflow-wrap: break-word;
         word-break: break-word;
-        line-height: 1;
+        line-height: 100%;
         margin-right: 30px;
-
-          
-        
+      
       }
       .titulo-box {
         font-weight: 700;
@@ -515,14 +504,18 @@
         line-height: 40%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
-
-        .sale-font{
+ 
+        .sale-font {
           font-weight: 100;
           font-family: var(--font-nunito-sans), sans-serif;
           font-size: 32px;
           line-height: 40%;
           letter-spacing: 0%;
           color: var(--color-text-bolder);
+         position: absolute;
+         width: 95px;
+         left: 0;
+         margin-top: 5vh;
         }
       }
       h3 {
@@ -563,7 +556,7 @@
     cursor: pointer;
     font-size: 22px;
   }
-  
+
   .next-button {
     right: 10px;
     margin-right: 0px;
@@ -578,14 +571,13 @@
   /* Ex: iPhone SE, Galaxy S5 */
   .carousel-container {
     position: relative;
-    width: 320px;
+    max-width: 320px;
     height: 306px;
     margin: 0 auto;
   }
 
   .carousel-slide {
-    
-    width: 320px;
+    max-width: 320px;
     height: 306px;
     color: #000000;
     background: var(--bk-color-carousel);
@@ -600,7 +592,6 @@
     justify-content: center;
     width: 320px;
     height: 306px;
-    
   }
   /*  */
   .slide_one {
@@ -622,75 +613,88 @@
       width: 320px;
       height: 306px;
       img {
-        left: -78px;
+        left: -98px;
         position: absolute;
       }
     }
     /* container_text_sale_carousel */
     .container_text_sale_carousel {
-      height: 194px;
+      height: 164px;
       width: 139px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       position: absolute;
       top: 0;
-      margin-left: 136px;
+      margin-left: 216px;
       z-index: 20;
-      margin-top: 51px;
-      background-color: #0000001f;
-      border-radius: 8px;
+      margin-top: 71px;
       div {
         width: 139px;
-        height: 164px;
+        height: 184px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         overflow-wrap: break-word;
         word-break: break-word;
+       
+        
       }
 
       .titulo-box {
         text-align: center;
         word-break: break-word;
         overflow-wrap: break-word;
-        word-spacing: 0.3rem;
+        height: 204px;
         white-space: normal;
         overflow-wrap: break-word;
         word-break: break-word;
-        line-height: 1;
+        line-height: 100%;
         margin-right: 30px;
-
-
-        
+      
       }
-      h1 {
+      .titulo-box {
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 40%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
+ 
+        .sale-font {
+          font-weight: 100;
+          font-family: var(--font-nunito-sans), sans-serif;
+          font-size: 28px;
+          line-height: 40%;
+          letter-spacing: 0%;
+          color: var(--color-text-bolder);
+         position: absolute;
+         width: 95px;
+         left: 0;
+         margin-top: 5vh;
+        }
       }
       h3 {
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 100%;
         letter-spacing: 30%;
         color: var(--bg-sale);
         word-spacing: 10px;
+        margin-right: 20px;
       }
       h2 {
-        width: 580px;
+        width: 180px;
         height: 34px;
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
-        font-size: 32px;
+        font-size: 17px;
         line-height: 100%;
         letter-spacing: 30%;
         color: var(--bg-sale);
+      
       }
     }
   }
@@ -711,7 +715,7 @@
     cursor: pointer;
     font-size: 22px;
   }
-  
+
   .next-button {
     right: 10px;
     margin-right: 0px;
