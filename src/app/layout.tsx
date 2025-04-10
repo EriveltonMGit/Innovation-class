@@ -1,5 +1,3 @@
-// ❌ Sem "use client" aqui
-
 import type { Metadata } from "next";
 import { Nunito_Sans, Heebo } from "next/font/google";
 import "./globals.css";
@@ -38,7 +36,24 @@ export default function RootLayout({
       >
         <AOSInit />
         {children}
-        <Toaster position="top-center" />
+        <Toaster 
+          position="top-center" 
+          containerStyle={{
+            top: 30,
+            left: 0,
+            right: 0,
+            position: 'fixed',
+          }}
+          toastOptions={{
+            style: {
+              margin: '0 auto',
+              maxWidth: '400px',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            },
+          }}
+        />
       </body>
     </html>
   );
