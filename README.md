@@ -8,7 +8,7 @@ O Innovation Class é uma plataforma educacional full-stack que combina:
 ### 🔗 Links Úteis
 - 🌐 [Aplicação Live](https://innovation-class.netlify.app/)
 - ⚙️ [API Backend](https://backend-inovation-class.onrender.com/produtos)
-- 💻 [Repositório GitHub](https://github.com/seu-usuario/innovation-class)
+- 💻 [Repositório GitHub](https://github.com/EriveltonMGit/Innovation-class)
 
 ## 🛠 Stack Tecnológica
 
