@@ -226,7 +226,7 @@ function CardProducts() {
                   textOverflow: "ellipsis", 
                 },
               });
-        }, 1000); // tempo de 1.5 segundos
+        }, 1500); // tempo de 1.5 segundos
       } else {
         toast.error("Erro ao salvar o produto no servidor.");
       }

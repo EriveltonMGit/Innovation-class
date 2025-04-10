@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "id": "e5bf88d1-bff6-43ec-adc7-9aa046429b54",
+      "id": "2f2a4a16-a270-4676-9e36-77a8b9530fe2",
       "estado": "Novo",
       "img": "/img/cards/img.webp",
       "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
@@ -11,7 +11,7 @@
       "desconto": "10% OFF"
     },
     {
-      "id": "443a1d9f-a308-4d74-9312-02a910f8929a",
+      "id": "9e8e4bca-5321-4b1d-a0e4-588b48347692",
       "estado": "Novo",
       "img": "/img/cards/img.webp",
       "descricao": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
