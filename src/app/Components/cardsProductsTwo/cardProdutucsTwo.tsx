@@ -7,6 +7,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { useCartStore } from "../../zustand/cartStore";
 import toast from "react-hot-toast";
 import { Produto } from '../../types/produto';
+import { salvarProdutoNoServidor } from "../../services/product.service";
 
 function CardProductsTwo() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -177,7 +178,7 @@ function CardProductsTwo() {
   );
 
   // Rola uma quantidade igual à largura de um card + gap (438 + 17 px)
- useEffect(() => {
+  useEffect(() => {
     const total = Math.ceil(produtos.length / CARDS_PER_VIEW);
     setTotalSlides(total);
   }, [produtos]);
@@ -207,39 +208,42 @@ function CardProductsTwo() {
 
   const handleAddToCart = async (produto: Produto) => {
     try {
-      const response = await fetch("http://localhost:3001/produtos");
-      if (!response.ok) throw new Error("Falha ao buscar produtos.");
-      
-      const produtosExistentes: Produto[] = await response.json();
+      const sucesso = await salvarProdutoNoServidor(produto);
 
-      const maxId = produtosExistentes.length
-        ? Math.max(...produtosExistentes.map((p) => p.id))
-        : 0;
-
-      const novoProduto = { ...produto, id: maxId + 1 };
-
-      const salvar = await fetch("http://localhost:3001/produtos", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(novoProduto),
-      });
-
-      if (!salvar.ok) throw new Error("Erro ao salvar produto no carrinho.");
-
-      toast.success("Produto adicionado ao carrinho!");
-      addToCart(novoProduto); // opcional, se quiser atualizar o Zustand também
-
+      if (sucesso) {
+        setTimeout(() => {
+          addToCart(produto); // Atualiza o estado do carrinho
+       
+          toast.success("Produto adicionado ao carrinho com sucesso!", {
+            style: {
+              fontSize: "14px",
+              maxWidth: "400px", 
+              whiteSpace: "nowrap", 
+              overflow: "hidden",
+              textOverflow: "ellipsis", 
+            },
+          });
+        }, 1000);
+      } else {
+        toast.error("Erro ao salvar o produto no servidor.");
+      }
     } catch (error) {
-      console.error("Erro ao adicionar produto:", error);
-      toast.error("Erro ao adicionar ao carrinho.");
+      console.error("Erro ao conectar com o servidor JSON:", error);
+      toast.error("Erro ao conectar com o servidor JSON.");
     }
+  };
+
+  const handleVerMaisClick = () => {
+    toast("Funcionalidade em desenvolvimento.", {
+      icon: "🚧",
+    });
   };
 
   return (
     <section className="container_cards_two" data-aos="fade-up" data-aos-duration="2000">
       <div className="cards_title_area">
         <h2>Lançamentos</h2>
-        <span className="ver-mais">Ver mais</span>
+        <span className="ver-mais" onClick={handleVerMaisClick}>Ver mais</span>
       </div>
 
       <div className="scroll-buttons">
