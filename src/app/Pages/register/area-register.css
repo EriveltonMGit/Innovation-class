@@ -298,7 +298,7 @@
         border-radius: 8px;
       }
       .checkbox_area {
-        width: 329px;
+        width: 300px;
         height: 16px;
         display: flex;
         align-items: center;
@@ -316,7 +316,7 @@
           width: 10px;
           position: absolute;
           left: 0;
-          margin-left: 20px;
+          margin-left: 30px;
         }
       }
       button {
@@ -348,6 +348,7 @@
     position: absolute;
     top: 3929px;
     width: 358px;
+    max-width: 358px;
     height: 330px;
     display: flex;
     align-items: center;
@@ -390,6 +391,7 @@
     }
     main {
       width: 358px;
+      max-width: 358px;
       height: 284px;
       border-radius: 8px;
       background-color: var(--bg-color-register);
@@ -419,15 +421,16 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-       
+        
       }
     
       .checkbox_area {
-        width: 329px;
+        width: 280px;
         height: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         p {
           height: 16px;
@@ -441,7 +444,7 @@
           width: 10px;
           position: absolute;
           left: 0;
-          margin-left: 20px;
+          margin-left: 30px;
         }
       }
       button {
@@ -548,7 +551,7 @@
       }
     
       .checkbox_area {
-        width: 329px;
+        width: 280px;
         height: 16px;
         display: flex;
         align-items: center;
@@ -566,7 +569,7 @@
           width: 10px;
           position: absolute;
           left: 0;
-          margin-left: 20px;
+          margin-left: 30px;
         }
       }
       button {
