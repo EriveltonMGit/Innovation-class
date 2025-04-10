@@ -20,7 +20,6 @@ const heebo = Heebo({
   weight: ["400", "500", "700"],
 });
 
-// ✅ Agora o metadata pode ser exportado normalmente
 export const metadata: Metadata = {
   title: "Avanti - Innovation Class",
   description: "Aplicação Innovation Class - Avanti",
@@ -33,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.variable} ${heebo.variable} antialiased`}>
+      <body 
+        className={`${nunitoSans.variable} ${heebo.variable} antialiased`}
+        suppressHydrationWarning={true} 
+      >
         <AOSInit />
         {children}
         <Toaster position="top-center" />

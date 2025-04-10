@@ -10,7 +10,11 @@ export default function AOSInit() {
       duration: 800,
       once: true,
     });
+    
+    return () => {
+      AOS.refresh();
+    };
   }, []);
 
-  return null; // Esse componente só inicializa o AOS
+  return null;
 }

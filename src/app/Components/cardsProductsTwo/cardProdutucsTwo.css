@@ -251,38 +251,6 @@
 
 /* ==============  MEDIA SCREEN ============== */
 
-/* 📱 Celulares pequenos (modo retrato) */
-
-@media (max-width: 390px) {
-  /* Ex: iPhone SE, Galaxy S5 */
-  /* container_cards */
-.container_cards_two {
-  width: 90%;
-  height: 478px;
-  position: absolute;
-  top: 3806px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  display: none;
-}
-}
-@media (max-width: 480px) {
-  /* Ex: iPhone SE, Galaxy S5 */
-  /* container_cards */
-.container_cards_two {
-  width: 90%;
-  height: 478px;
-  position: absolute;
-  top: 3806px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  display: none;
-}
-}
 
 /* 📱 Celulares médios/grandes (modo retrato) */
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
@@ -558,4 +526,53 @@
   color: var(  --color-text-white);
 }
 
+}
+
+/* 📱 Celulares pequenos (modo retrato) */
+
+
+@media (max-width: 480px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_cards */
+.container_cards_two {
+  width: 90%;
+  height: 478px;
+  position: absolute;
+  top: 3806px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  display: none;
+}
+}
+@media (max-width: 390px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_cards */
+.container_cards_two {
+  width: 90%;
+  height: 478px;
+  position: absolute;
+  top: 3806px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  display: none;
+}
+}
+@media (max-width: 320px) {
+  /* Ex: iPhone SE, Galaxy S5 */
+  /* container_cards */
+.container_cards_two {
+  width: 90%;
+  height: 478px;
+  position: absolute;
+  top: 3806px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  display: none;
+}
 }
