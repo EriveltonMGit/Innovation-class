@@ -272,12 +272,14 @@
   /* Ex: iPhone SE, Galaxy S5 */
   .carousel-container {
     position: relative;
+    width: 100%;
     max-width: 480px;
     height: 306px;
     margin: 0 auto;
   }
 
   .carousel-slide {
+    width: 100%;
     max-width: 480px;
     height: 306px;
     color: #000000;
@@ -291,12 +293,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     height: 306px;
   }
   /*  */
   .slide_one {
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     height: 306px;
     text-align: center;
     display: flex;
@@ -311,7 +315,8 @@
       justify-content: flex-end;
 
       top: 0;
-      width: 480px;
+      width: 100%;
+      max-width: 480px;
       height: 306px;
       img {
         left: -98px;
@@ -330,36 +335,51 @@
       margin-left: 216px;
       z-index: 20;
       margin-top: 71px;
-
       div {
         width: 139px;
-        height: 164px;
+        height: 184px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         overflow-wrap: break-word;
         word-break: break-word;
+                
+        
       }
 
       .titulo-box {
         text-align: center;
         word-break: break-word;
         overflow-wrap: break-word;
-        word-spacing: 0.3rem;
+        height: 204px;
         white-space: normal;
         overflow-wrap: break-word;
         word-break: break-word;
-        line-height: 1;
+        line-height: 100%;
         margin-right: 30px;
+      
       }
-      h1 {
+      .titulo-box {
         font-weight: 700;
         font-family: var(--font-nunito-sans), sans-serif;
         font-size: 32px;
         line-height: 40%;
         letter-spacing: 0%;
         color: var(--color-text-bolder);
+ 
+        .sale-font {
+          font-weight: 100;
+          font-family: var(--font-nunito-sans), sans-serif;
+          font-size: 32px;
+          line-height: 40%;
+          letter-spacing: 0%;
+          color: var(--color-text-bolder);
+         position: absolute;
+         width: 95px;
+         left: 0;
+         margin-top: 5vh;
+        }
       }
       h3 {
         font-weight: 700;
@@ -391,7 +411,7 @@
   }
 
   .prev-button {
-    left: 10px;
+    left: 35px;
     margin-left: 0px;
     background-color: var(--colorbg-white);
     border-radius: 50%;
@@ -401,7 +421,7 @@
   }
 
   .next-button {
-    right: 10px;
+    right: 35px;
     margin-right: 0px;
     background-color: var(--colorbg-white);
     border-radius: 50%;
