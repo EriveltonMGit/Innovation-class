@@ -43,7 +43,7 @@ Tela Principal	Dashboard
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/innovation-class.git
+git clone https://github.com/EriveltonMGit/Innovation-class.git
 cd innovation-class
 
 # 2. Instale as dependências
